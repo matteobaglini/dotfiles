@@ -12,4 +12,5 @@ ln -sf "$DOT_FILES_DIR/vimrc" .vimrc
 if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
-vim +PluginInstall! +qall >/dev/null 2>&1
+echo "Install/update vim plugins"
+vim +PluginInstall! +qall &>/dev/null
