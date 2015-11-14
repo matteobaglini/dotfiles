@@ -1,3 +1,5 @@
+#!/bin/bash
+
 DOT_FILES_DIR="$( cd "$( dirname "$0" )" && pwd )"
 cd $HOME
 
