@@ -101,15 +101,15 @@ set foldmethod=marker
 
 " Fix terminal problems
 if !has('gui_running')
-  set t_RV=
-  set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
+    set t_RV=
+    set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
 endif
 
 " GUI config
 if has('gui_running')
-  set guioptions-=m
-  set guioptions-=T
-  set guioptions-=r
+    set guioptions-=m
+    set guioptions-=T
+    set guioptions-=r
 endif
 
 " Remap leader
@@ -205,9 +205,9 @@ vnoremap > >gv
 nnoremap ! :!
 
 augroup FixBeforeWrite
-  autocmd!
-  autocmd BufWritePre * :normal gg=G
-  autocmd BufWritePre * call RemoveTrailingWhitespaces()
+    autocmd!
+    autocmd BufWritePre * :normal gg=G
+    autocmd BufWritePre * call RemoveTrailingWhitespaces()
 augroup END
 
 " Disable filetpye, this is important to do *before* 'vundle#begin()'
@@ -254,9 +254,9 @@ let g:syntastic_javascript_checkers = ['eslint']
 " {{{ fuzzy finder
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules|bower_components)$',
-  \ 'file': '\v\.(exe|so|dll|suo)$',
-  \ }
+            \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules|bower_components)$',
+            \ 'file': '\v\.(exe|so|dll|suo)$',
+            \ }
 let g:ctrlp_cmd = 'CtrlPMixed'
 " }}}"
 
