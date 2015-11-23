@@ -236,7 +236,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'goldfeld/vim-seek'
 Plugin 'pafcu/vimsplain'
 Plugin 'Tabular'
-Plugin 'tomasr/molokai'
 " }}}
 
 " {{{ status/tabline
