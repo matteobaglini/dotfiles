@@ -206,7 +206,6 @@ nnoremap ! :!
 
 augroup FixBeforeWrite
     autocmd!
-    autocmd BufWritePre * :normal gg=G
     autocmd BufWritePre * call RemoveTrailingWhitespaces()
 augroup END
 
