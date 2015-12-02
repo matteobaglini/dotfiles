@@ -141,8 +141,6 @@ nnoremap <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>o o<esc>k
 " Simple add blank line (prev)
 nnoremap <leader>O O<esc>j
-" Expand/Collapse fold
-nnoremap <leader>z za
 
 " Access vimrc
 nnoremap <silent> <leader>erc :tabedit $MYVIMRC<cr>
