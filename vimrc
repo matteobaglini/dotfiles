@@ -119,12 +119,6 @@ let maplocalleader=","
 " Make Y behave consistently with D and C
 nnoremap Y y$
 
-" Make H and L behave consistently with I and A
-nnoremap H ^
-nnoremap L $
-nnoremap ^ <nop>
-nnoremap $ <nop>
-
 " Shortcuts
 "
 " Force file write
