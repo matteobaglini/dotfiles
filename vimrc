@@ -225,6 +225,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
+let NERDTreeShowHidden=1
 Plugin 'goldfeld/vim-seek'
 Plugin 'pafcu/vimsplain'
 Plugin 'Tabular'
