@@ -13,3 +13,14 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 vim +PluginInstall! +qall &>/dev/null
+
+echo "Install powerline fonts"
+if [ ! -d ~/powerline-fonts ]; then
+    git clone --recursive --depth 1 https://github.com/powerline/fonts/ ~/powerline-fonts
+    cd ~/powerline-fonts
+else
+    cd ~/powerline-fonts
+    git pull
+fi
+./install.sh &>/dev/null
+cd $OLDPWD
