@@ -16,10 +16,25 @@ vim +PluginInstall! +qall &>/dev/null
 
 echo "Install powerline fonts"
 if [ ! -d ~/powerline-fonts ]; then
-    git clone --recursive --depth 1 https://github.com/powerline/fonts/ ~/powerline-fonts
+    git clone --recursive --depth 1 \
+        https://github.com/powerline/fonts/ \
+        ~/powerline-fonts
     cd ~/powerline-fonts
 else
     cd ~/powerline-fonts
+    git pull
+fi
+./install.sh &>/dev/null
+cd $OLDPWD
+
+echo "Install awesome terminal fonts"
+if [ ! -d ~/awesome-fonts ]; then
+    git clone --recursive --depth 1 \
+        https://github.com/gabrielelana/awesome-terminal-fonts/ \
+        ~/awesome-fonts
+    cd ~/awesome-fonts
+else
+    cd ~/awesome-fonts
     git pull
 fi
 ./install.sh &>/dev/null
