@@ -205,7 +205,7 @@ augroup END
 filetype off
 
 " Install plugins via vim-plug
-call plug#begin('~/vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 " {{{ misc
 Plug 'tmhedberg/matchit'
