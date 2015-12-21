@@ -3,6 +3,7 @@
 DOT_FILES_DIR="$( cd "$( dirname "$0" )" && pwd )"
 
 echo "Make links between $DOT_FILES_DIR and $HOME"
+rm -f ~/.hushlogin && ln -sf "$DOT_FILES_DIR/hushlogin" ~/.hushlogin
 rm -f ~/.gitconfig && ln -sf "$DOT_FILES_DIR/gitconfig" ~/.gitconfig
 rm -rf ~/.vim && ln -sf "$DOT_FILES_DIR/vim" ~/.vim
 rm -f ~/.vimrc && ln -sf "$DOT_FILES_DIR/vimrc" ~/.vimrc
