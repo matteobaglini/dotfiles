@@ -1,3 +1,2 @@
 vim/.*
-vim/bundle/*
-!vim/bundle/.keepme
+vim/autoload/*

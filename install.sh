@@ -8,11 +8,15 @@ rm -f ~/.gitconfig && ln -sf "$DOT_FILES_DIR/gitconfig" ~/.gitconfig
 rm -rf ~/.vim && ln -sf "$DOT_FILES_DIR/vim" ~/.vim
 rm -f ~/.vimrc && ln -sf "$DOT_FILES_DIR/vimrc" ~/.vimrc
 
-echo "Install VIM plugins"
-if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+echo "Install vim-plug and other plugins"
+if [ ! -f $DOT_FILES_DIR/vim/autoload/plug.vim ]; then
+    curl -fLo $DOT_FILES_DIR/vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+else
+    vim +PlugUpgrade +qall &>/dev/null
 fi
-vim +PluginInstall! +qall &>/dev/null
+vim +PlugClean! +qall &>/dev/null
+vim +PlugUpdate +qall &>/dev/null
 
 echo "Install powerline fonts"
 if [ ! -d ~/powerline-fonts ]; then

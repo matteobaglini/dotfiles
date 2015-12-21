@@ -201,49 +201,40 @@ augroup FixBeforeWrite
     autocmd BufWritePre * call RemoveTrailingWhitespaces()
 augroup END
 
-" Disable filetpye, this is important to do *before* 'vundle#begin()'
+" Disable filetpye, this is important to do *before* plugins installation
 filetype off
 
-" Install bundles via Vundle
-if has("win32") || has("win64")
-    set rtp+=~/vim/vimfiles/bundle/Vundle.vim/
-    let path='~/vim/vimfiles/bundle'
-    call vundle#begin(path)
-else
-    set rtp+=~/.vim/bundle/Vundle.vim
-    call vundle#begin()
-endif
-
-Plugin 'gmarik/Vundle.vim'
+" Install plugins via vim-plug
+call plug#begin('~/vim/plugged')
 
 " {{{ misc
-Plugin 'tmhedberg/matchit'
-Plugin 'mileszs/ack.vim'
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/nerdtree'
+Plug 'tmhedberg/matchit'
+Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdtree'
 let NERDTreeShowHidden=1
-Plugin 'goldfeld/vim-seek'
-Plugin 'pafcu/vimsplain'
-Plugin 'Tabular'
+Plug 'goldfeld/vim-seek'
+Plug 'pafcu/vimsplain'
+Plug 'Tabular'
 " }}}
 
 " {{{ status/tabline
-Plugin 'bling/vim-airline'
+Plug 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
 " }}}
 
 " {{{ syntax checking
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 " }}}
 
 " {{{ fuzzy finder
-Plugin 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim'
 let g:ctrlp_custom_ignore = {
             \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules|bower_components)$',
             \ 'file': '\v\.(exe|so|dll|suo)$',
@@ -252,20 +243,20 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 " }}}"
 
 " {{{ git
-Plugin 'airblade/vim-gitgutter'
-Plugin 'chrisbra/vim-diff-enhanced'
+Plug 'airblade/vim-gitgutter'
+Plug 'chrisbra/vim-diff-enhanced'
 " }}}
 
 " {{{ langs
-Plugin 'gabrielelana/vim-markdown'
-Plugin 'PProvost/vim-ps1'
-Plugin 'whatyouhide/vim-dockerfile'
-Plugin 'pangloss/vim-javascript'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'OmniSharp/omnisharp-vim'
+Plug 'gabrielelana/vim-markdown'
+Plug 'PProvost/vim-ps1'
+Plug 'whatyouhide/vim-dockerfile'
+Plug 'pangloss/vim-javascript'
+Plug 'vim-ruby/vim-ruby'
+Plug 'OmniSharp/omnisharp-vim'
 " }}}
 
-call vundle#end()
+call plug#end()
 
 " Enable syntax
 syntax on
