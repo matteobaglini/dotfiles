@@ -215,10 +215,9 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-surround'
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 let NERDTreeShowHidden=1
 Plug 'goldfeld/vim-seek'
-Plug 'pafcu/vimsplain'
 Plug 'Tabular'
 " }}}
 
@@ -248,12 +247,13 @@ Plug 'chrisbra/vim-diff-enhanced'
 " }}}
 
 " {{{ langs
-Plug 'gabrielelana/vim-markdown'
-Plug 'PProvost/vim-ps1'
-Plug 'whatyouhide/vim-dockerfile'
-Plug 'pangloss/vim-javascript'
-Plug 'vim-ruby/vim-ruby'
-Plug 'OmniSharp/omnisharp-vim'
+Plug 'gabrielelana/vim-markdown', { 'for': 'markdown' }
+Plug 'PProvost/vim-ps1', { 'for': 'ps1' }
+Plug 'whatyouhide/vim-dockerfile', { 'for': 'dockerfile' }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'OmniSharp/omnisharp-vim', { 'for': 'cs' }
+Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 " }}}
 
 call plug#end()
