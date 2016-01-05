@@ -222,6 +222,7 @@ Plug 'junegunn/vim-github-dashboard', { 'on': ['GHDashboard', 'GHActivity'] }
 Plug 'junegunn/vim-peekaboo'
 let g:peekaboo_window = 'vertical botright 50new'
 let g:peekaboo_delay = 250
+Plug 'mhinz/vim-startify'
 Plug 'Tabular'
 " }}}
 
