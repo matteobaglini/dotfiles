@@ -8,9 +8,16 @@
 [core]
 	autocrlf = input
 	editor = vim
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = auto
 [merge]
 	log = true
-	tool = vim
+	tool = vimdiff
+[diff]
+	tool = vimdiff
 [rerere]
 	enabled = true
 [alias]
