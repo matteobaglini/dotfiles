@@ -224,6 +224,7 @@ let g:peekaboo_window = 'vertical botright 50new'
 let g:peekaboo_delay = 250
 Plug 'mhinz/vim-startify'
 Plug 'Tabular'
+Plug 'diepm/vim-rest-console'
 " }}}
 
 " {{{ status/tabline
@@ -268,6 +269,13 @@ syntax on
 
 " Enable indentation, this is important to do *after* 'vundle#end()'
 filetype plugin indent on
+
+" Custom indentation
+if has('autocmd')
+    autocmd filetype ruby set tabstop=2 softtabstop=2 shiftwidth=2
+    autocmd filetype javascript set tabstop=2 softtabstop=2 shiftwidth=2
+    autocmd filetype json set tabstop=2 softtabstop=2 shiftwidth=2
+endif
 
 " Activate color scheme
 colorscheme molokai
