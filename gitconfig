@@ -36,8 +36,10 @@
 	bd = branch -D
 	rd = push origin --delete
 	co = checkout
-	pl = git pull --prune
+	pl = pull --prune
 	pr = pull --rebase --prune
 	ps = push
 	undo = reset HEAD~1 --mixed
 	throw = reset HEAD~1 --hard
+[credential]
+	helper = store
