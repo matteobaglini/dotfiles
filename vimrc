@@ -225,6 +225,7 @@ let g:peekaboo_delay = 250
 Plug 'mhinz/vim-startify'
 Plug 'Tabular'
 Plug 'diepm/vim-rest-console'
+Plug 'terryma/vim-expand-region'
 " }}}
 
 " {{{ status/tabline
