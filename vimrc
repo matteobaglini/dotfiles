@@ -257,6 +257,7 @@ Plug 'gabrielelana/vim-markdown', { 'for': 'markdown' }
 Plug 'PProvost/vim-ps1', { 'for': 'ps1' }
 Plug 'whatyouhide/vim-dockerfile', { 'for': 'dockerfile' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'OmniSharp/omnisharp-vim', { 'for': 'cs' }
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
