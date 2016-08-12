@@ -45,5 +45,7 @@ fi
 cd $OLDPWD
 
 echo "Configure Gnome Terminal profile"
-dconf reset -f "/org/gnome/terminal/"
-cat gnome-terminal.ini | dconf load "/org/gnome/terminal/"
+if [ -n "$DISPLAY" ]; then
+    dconf reset -f "/org/gnome/terminal/"
+    cat gnome-terminal.ini | dconf load "/org/gnome/terminal/"
+fi
