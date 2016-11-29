@@ -226,6 +226,7 @@ Plug 'mhinz/vim-startify'
 Plug 'Tabular'
 Plug 'diepm/vim-rest-console'
 Plug 'terryma/vim-expand-region'
+Plug 'thinca/vim-quickrun'
 " }}}
 
 " {{{ status/tabline
