@@ -1,8 +1,9 @@
 {
+	"extensions.autoUpdate": true,
 	"editor.fontSize": 22,
 	"editor.cursorStyle": "block",
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,
 	"editor.renderWhitespace": "boundary",
-	"files.eol": "\n",
+	"files.eol": "\n"
 }
