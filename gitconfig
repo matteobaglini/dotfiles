@@ -1,25 +1,25 @@
 [user]
-	email = matteo.baglini@gmail.com
-	name = Matteo Baglini
+    email = matteo.baglini@gmail.com
+    name = Matteo Baglini
 [github]
-	user = matteo.baglini
+    user = matteo.baglini
 [push]
-	default = tracking
+    default = tracking
 [core]
-	autocrlf = input
-	editor = vim
+    autocrlf = input
+    editor = vim
 [color]
     diff = auto
     status = auto
     branch = auto
     ui = auto
 [merge]
-	log = true
-	tool = vimdiff
+    log = true
+    tool = vimdiff
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [rerere]
-	enabled = true
+    enabled = true
 [alias]
     l1 = log --pretty=oneline -n 20 --graph
     l = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate --graph
@@ -44,10 +44,10 @@
     ps = push
     df = diff
     undo = reset HEAD~1 --mixed
-    throw = reset HEAD~1 --hard  
+    throw = reset HEAD~1 --hard
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
 [credential]
-	helper = store
+    helper = store
