@@ -45,6 +45,7 @@
     df = diff
     undo = reset HEAD~1 --mixed
     throw = reset HEAD~1 --hard
+    cc = clean -dxf
 [filter "lfs"]
     required = true
     clean = git-lfs clean -- %f
