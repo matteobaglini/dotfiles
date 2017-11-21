@@ -45,7 +45,7 @@
     df = diff
     undo = reset HEAD~1 --mixed
     throw = reset HEAD~1 --hard
-    c = clean -df
+    c = clean -f
     ci = clean -dfx
 [filter "lfs"]
     required = true
