@@ -34,6 +34,7 @@
     bl = blame
     cm = commit -m
     ca = commit --amend
+    can = commit --amend --no-edit
     ad = add -A
     bd = branch -D
     rd = push origin --delete
@@ -45,8 +46,9 @@
     df = diff
     undo = reset HEAD~1 --mixed
     throw = reset HEAD~1 --hard
-    c = clean -f
-    ci = clean -dfx
+    cc = clean -dfx
+    tree = !git log --graph --decorate --all --oneline
+    ec = config --global -e
 [filter "lfs"]
     required = true
     clean = git-lfs clean -- %f
