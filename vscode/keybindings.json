@@ -2,4 +2,15 @@
  "key": "alt+t",
  "command": "workbench.action.tasks.test",
  "when": "editorTextFocus"
-}]
+},
+{
+    "key": "ctrl+r",
+    "command": "redo",
+    "when": "textInputFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+y",
+    "command": "-redo",
+    "when": "textInputFocus && !editorReadonly"
+}
+]
