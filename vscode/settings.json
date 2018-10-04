@@ -1,6 +1,6 @@
 {
     "extensions.autoUpdate": true,
-    "editor.fontSize": 20,
+    "editor.fontSize": 22,
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.detectIndentation": false,
