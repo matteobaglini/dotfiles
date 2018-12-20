@@ -11,3 +11,17 @@ rm -f ~/.config/Code/User/settings.json && ln -sf "$DOT_FILES_DIR/vscode/setting
 rm -f ~/.config/Code/User/locale.json && ln -sf "$DOT_FILES_DIR/vscode/locale.json" ~/.config/Code/User/locale.json
 rm -f ~/.config/Code/User/vsicons.settings.json && ln -sf "$DOT_FILES_DIR/vscode/vsicons.settings.json" ~/.config/Code/User/vsicons.settings.json
 rm -f ~/.config/Code/User/keybindings.json && ln -sf "$DOT_FILES_DIR/vscode/keybindings.json" ~/.config/Code/User/keybindings.json
+
+echo "Install/Upgrade vim-plug"
+if [ ! -f $DOT_FILES_DIR/vim/autoload/plug.vim ]; then
+    curl -fLo $DOT_FILES_DIR/vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+else
+    vim +PlugUpgrade +qall &>/dev/null
+fi
+
+echo "Remove unmapped VIM plugins"
+vim +PlugClean! +qall &>/dev/null
+
+echo "Install/Update VIM plugins"
+vim +PlugUpdate +qall &>/dev/null
