@@ -1,6 +1,5 @@
 {
     "extensions.autoUpdate": true,
-    "editor.fontSize": 22,
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.detectIndentation": false,
@@ -11,10 +10,14 @@
     "editor.tabCompletion": true,
     "workbench.colorTheme": "Dracula",
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "none",
     "window.zoomLevel": 0,
     "window.restoreWindows": "none",
     "window.titleBarStyle": "custom",
     "vsicons.dontShowNewVersionMessage": true,
+    "workbench.iconTheme": "vscode-icons",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "search.location": "panel",
+    "editor.fontSize": 16,
 }
