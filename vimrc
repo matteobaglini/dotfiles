@@ -207,6 +207,7 @@ filetype off
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
@@ -231,7 +232,7 @@ if has('autocmd')
 endif
 
 " Activate color scheme
-colorscheme molokai
+color dracula
 
 " Custom function
 function! RemoveTrailingWhitespaces()
