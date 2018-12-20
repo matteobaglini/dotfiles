@@ -218,6 +218,8 @@ Plug 'mhinz/vim-signify'
 let g:signify_vcs_list=[ 'git', 'hg', 'svn' ]
 let g:signify_realtime = 0
 
+Plug 'justinmk/vim-gtfo'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
