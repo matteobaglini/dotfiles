@@ -20,7 +20,7 @@ else
     vim +PlugUpgrade +qall &>/dev/null
 fi
 
-echo "Remove unmapped VIM plugins"
+echo "Remove unused VIM plugins"
 vim +PlugClean! +qall &>/dev/null
 
 echo "Install/Update VIM plugins"

@@ -204,6 +204,18 @@ augroup END
 " Disable filetpye, this is important to do *before* plugins installation
 filetype off
 
+" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.vim/plugged')
+
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-surround'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
 " Enable syntax
 syntax on
 
