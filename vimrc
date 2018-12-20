@@ -129,8 +129,6 @@ nnoremap <leader>q :qall<cr>
 nnoremap <leader>l :set list!<cr>
 " Turn off highlighted matches
 nnoremap <leader><space> :nohls<cr>
-" Togglw NERDTree left side panel
-nnoremap <leader>n :NERDTreeToggle<cr>
 " Simple ad blank line (next)
 nnoremap <leader>o o<esc>k
 " Simple add blank line (prev)
