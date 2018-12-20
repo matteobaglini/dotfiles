@@ -212,6 +212,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-surround'
+Plug 'mhinz/vim-startify'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
