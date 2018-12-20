@@ -13,7 +13,7 @@ set number
 set ruler
 " Display incomplete commands
 set showcmd
-" Display the mode you're in
+"windows Display the mode you're in
 set showmode
 " Set show matching parenthesis
 set showmatch
@@ -203,68 +203,6 @@ augroup END
 
 " Disable filetpye, this is important to do *before* plugins installation
 filetype off
-
-" Install plugins via vim-plug
-call plug#begin('~/.vim/plugged')
-
-" {{{ misc
-Plug 'tmhedberg/matchit'
-Plug 'mileszs/ack.vim'
-Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-surround'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-let NERDTreeShowHidden=1
-Plug 'goldfeld/vim-seek'
-Plug 'junegunn/vim-github-dashboard', { 'on': ['GHDashboard', 'GHActivity'] }
-Plug 'junegunn/vim-peekaboo'
-let g:peekaboo_window = 'vertical botright 50new'
-let g:peekaboo_delay = 250
-Plug 'mhinz/vim-startify'
-Plug 'Tabular'
-Plug 'diepm/vim-rest-console'
-Plug 'terryma/vim-expand-region'
-Plug 'thinca/vim-quickrun'
-" }}}
-
-" {{{ status/tabline
-Plug 'bling/vim-airline'
-let g:airline_powerline_fonts = 1
-" }}}
-
-" {{{ syntax checking
-Plug 'scrooloose/syntastic'
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
-" }}}
-
-" {{{ fuzzy finder
-Plug 'kien/ctrlp.vim'
-let g:ctrlp_custom_ignore = {
-            \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules|bower_components)$',
-            \ 'file': '\v\.(exe|so|dll|suo)$',
-            \ }
-let g:ctrlp_cmd = 'CtrlPMixed'
-" }}}"
-
-" {{{ git
-Plug 'airblade/vim-gitgutter'
-Plug 'chrisbra/vim-diff-enhanced'
-" }}}
-
-" {{{ langs
-Plug 'gabrielelana/vim-markdown', { 'for': 'markdown' }
-Plug 'PProvost/vim-ps1', { 'for': 'ps1' }
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'elzr/vim-json', { 'for': 'json' }
-Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
-Plug 'OmniSharp/omnisharp-vim', { 'for': 'cs' }
-Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
-" }}}
-
-call plug#end()
 
 " Enable syntax
 syntax on
