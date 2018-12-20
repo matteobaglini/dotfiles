@@ -214,6 +214,9 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-surround'
 
 Plug 'mhinz/vim-startify'
+Plug 'mhinz/vim-signify'
+let g:signify_vcs_list=[ 'git', 'hg', 'svn' ]
+let g:signify_realtime = 0
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
