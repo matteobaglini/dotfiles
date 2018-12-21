@@ -110,6 +110,8 @@ if has('gui_running')
     set guioptions-=m
     set guioptions-=T
     set guioptions-=r
+    let g:gtk_nocache=[0x00000000, 0xfc00ffff, 0xf8000001, 0x78000001]
+    set guifont=Fira\ Code\ 14
 endif
 
 " Remap leader
@@ -236,10 +238,8 @@ if has('autocmd')
     autocmd filetype json set tabstop=2 softtabstop=2 shiftwidth=2
 endif
 
-" Set color theme and font
+" Set color theme
 color dracula
-set guifont=Fira\ Code\ 14
-
 
 " Custom function
 function! RemoveTrailingWhitespaces()
