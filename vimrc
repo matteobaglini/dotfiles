@@ -236,8 +236,10 @@ if has('autocmd')
     autocmd filetype json set tabstop=2 softtabstop=2 shiftwidth=2
 endif
 
-" Activate color scheme
+" Set color theme and font
 color dracula
+set guifont=Fira\ Code\ 14
+
 
 " Custom function
 function! RemoveTrailingWhitespaces()
