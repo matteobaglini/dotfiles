@@ -222,6 +222,9 @@ let g:signify_realtime = 0
 
 Plug 'justinmk/vim-gtfo'
 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -247,3 +250,6 @@ function! RemoveTrailingWhitespaces()
     silent! execute ':%s/\s\+$//'
     call setpos('.', l:save_cursor)
 endfunction
+
+" FZF shortcut
+nnoremap <C-p> :<C-u>FZF<CR>
