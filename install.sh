@@ -21,7 +21,7 @@ else
 fi
 
 echo "Remove unused VIM plugins"
-vim +PlugClean! +qall &>/dev/null
+vim +PlugClean! +qall! &>/dev/null
 
 echo "Install/Update VIM plugins"
-vim +PlugUpdate +qall &>/dev/null
+vim +PlugUpdate +qall! &>/dev/null
