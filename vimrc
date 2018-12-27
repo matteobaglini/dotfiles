@@ -204,7 +204,6 @@ augroup END
 " Disable filetpye, this is important to do *before* plugins installation
 filetype off
 
-" Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -228,8 +227,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
 
-" List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
 " Enable syntax
