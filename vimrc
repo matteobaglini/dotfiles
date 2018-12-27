@@ -225,6 +225,10 @@ Plug 'justinmk/vim-gtfo'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+Plug 'bling/vim-airline'
+let g:airline_powerline_fonts = 1
+Plug 'vim-airline/vim-airline-themes'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
