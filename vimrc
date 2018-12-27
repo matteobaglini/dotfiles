@@ -223,6 +223,9 @@ Plug 'justinmk/vim-gtfo'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-peekaboo'
+let g:peekaboo_window = 'vertical botright 50new'
+let g:peekaboo_delay = 500
 
 Plug 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
