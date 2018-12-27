@@ -111,7 +111,7 @@ if has('gui_running')
     set guioptions-=T
     set guioptions-=r
     let g:gtk_nocache=[0x00000000, 0xfc00ffff, 0xf8000001, 0x78000001]
-    set guifont=Fira\ Code\ 14
+    set guifont=FuraCode\ Nerd\ Font\ 16
 endif
 
 " Remap leader
