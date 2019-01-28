@@ -111,7 +111,7 @@ if has('gui_running')
     set guioptions-=T
     set guioptions-=r
     let g:gtk_nocache=[0x00000000, 0xfc00ffff, 0xf8000001, 0x78000001]
-    set guifont=FuraCode\ Nerd\ Font\ 16
+    set guifont=FuraCode\ Nerd\ Font\ 14
 endif
 
 " Remap leader
@@ -226,6 +226,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-peekaboo'
 let g:peekaboo_window = 'vertical botright 50new'
 let g:peekaboo_delay = 500
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'
 
 Plug 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
