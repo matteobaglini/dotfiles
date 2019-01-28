@@ -1,6 +1,6 @@
 {
     "extensions.autoUpdate": true,
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "FuraCode Nerd Font",
     "editor.fontLigatures": true,
     "editor.detectIndentation": false,
     "editor.renderWhitespace": "none",
