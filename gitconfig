@@ -6,7 +6,6 @@
 [push]
     default = tracking
 [core]
-    autocrlf = input
     editor = vim
 [color]
     diff = auto
@@ -30,6 +29,7 @@
     s = status -s
     tags = tag -l
     bs = branch -a
+    bt = branch -vv
     rs = remote -v
     bl = blame
     cm = commit -m
