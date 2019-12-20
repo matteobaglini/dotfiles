@@ -49,6 +49,7 @@
     cc = clean -dfx
     tree = !git log --graph --decorate --all --oneline
     ec = config --global -e
+    v = rev-list --count HEAD
 [filter "lfs"]
     required = true
     clean = git-lfs clean -- %f
