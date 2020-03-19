@@ -1,16 +1,30 @@
-[{
- "key": "alt+t",
- "command": "workbench.action.tasks.test",
- "when": "editorTextFocus"
-},
-{
+[
+  {
+    "key": "alt+t",
+    "command": "workbench.action.tasks.test",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "ctrl+r",
     "command": "redo",
     "when": "textInputFocus && !editorReadonly"
-},
-{
+  },
+  {
     "key": "ctrl+y",
     "command": "-redo",
     "when": "textInputFocus && !editorReadonly"
-}
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "workbench.action.files.saveAll"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "-workbench.action.files.saveAs"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "-workbench.action.files.saveLocalFile",
+    "when": "remoteFileDialogVisible"
+  }
 ]
