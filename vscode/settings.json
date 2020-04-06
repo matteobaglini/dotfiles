@@ -27,6 +27,10 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "todo-tree.tree.showScanModeButton": false,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.largeFileOptimizations": false
 }
