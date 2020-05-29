@@ -20,7 +20,6 @@
   "explorer.confirmDragAndDrop": false,
   "editor.fontSize": 16,
   "files.autoSave": "off",
-  "editor.codeLens": false,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -31,6 +30,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "todo-tree.tree.showScanModeButton": false,
+  "editor.largeFileOptimizations": false,
+  "FSharp.useSdkScripts": true,
   "editor.formatOnSave": true,
-  "editor.largeFileOptimizations": false
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.userWords": ["Bson", "Xunit"]
 }
