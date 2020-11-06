@@ -7,6 +7,10 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias h="cd ~"
+alias dev="cd ~/dev"
+alias dot="cd ~/dev/dotfiles"
+alias dl="cd ~/dev/dl"
+alias spikes="cd ~/dev/spikes"
 
 alias lg='lazygit'
 alias ld='lazydocker'
