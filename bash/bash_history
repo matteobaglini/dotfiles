@@ -1,0 +1,2000 @@
+g ad
+g can
+g rebase -i
+m seed-db
+g diff
+g ad
+g cm "client - meter readings: reuse common DistributeCompensationItem component"
+g l1
+g ad
+g can
+g s
+g ad
+g cm "client - shared: remove duplication and use better name for individual-account.helpers"
+villo
+m seed-db
+git pl
+m seed-db
+code client
+m seed-db
+g ad
+g cm "client - meter reading: fix do not pass selectedBuildingCompensationItems on updateStatus"
+g ps
+m seed-db
+g s
+git ad
+git cm "client - meter reading: disable distribute button after confirmed distribution"
+git pre
+git pr
+m check-all
+m seed-db
+g ps
+m seed-db
+git ad
+git cm "client: remove console.log"
+g ps
+m seed-db
+g s
+g ad
+git cm "client - meter reading: merge into building compensation items data from quotation, buildingCompensationItems and individualCompensationItems"
+git rp
+git pr
+g ps
+g pl
+g ad
+g cm "server - quotation: remove (selected) building compensation items"
+g ad
+g cm "server - quotation: rename individualCompensationItems in selectedIndividualCompensationItems"
+git ad
+git can
+code client
+git ad
+g can
+g reset
+g s
+g undo
+g co client/schema.graphql
+git ad
+g cm "server - quotation: rename individualCompensationItems in selectedIndividualCompensationItems"
+git ad
+git can
+git ad
+git can
+m seed-db
+g ad
+git can
+g pr
+g ps
+m check-all
+g ps
+g ad
+g cm "client: fix rename"
+git ps
+g s
+g ad
+git cm "server: extract method object"
+git ad
+git ca
+g ad
+git can
+git ad
+git cm "server - compensation items: remove billingPeriodId from building type"
+g ad
+g ca
+g ad
+g can
+g ad
+g can
+git ad
+git can
+git pr
+m check-all
+g ad
+g cm "
+g cm "client - calculate shares: do not use buildingCompensationItems command's input field"
+git ad
+g cm "server - calculate shares: remove buildingCompensationItems"
+g pr
+m check-all
+g ps
+git co .
+m seed-db
+g s
+g ad
+git l1
+git cm "client - meter reading: no more send buildingCompensationItems in quotation mutation (fix prev commit)"
+g ps
+g pr
+m check-all
+G L1
+g l1
+gi ca
+git ca
+g ps
+m seed-db
+g ad
+git cm "client - building compensation items: add distribute button, no logic for now"
+g s
+git ad
+git cm "client - building compensation items: trigger onDistribute event"
+g ad
+git cm "client - building compensation items: change panale from table to distribute and back"
+g s
+g co client/src/pages/meter-readings/distribute-compensation-item/helpers.ts
+m seed-db
+g s
+g dif
+g diff
+git s
+git ad
+git cm "client - building compensation items: show compensation to distribute"
+g s
+g ad
+git cm "client - building compensation items: show individual distribution"
+g s
+g ad
+git cm "client - building compensation items: distribute compensation item to selected individuals"
+git ad
+git can
+g s
+g ad
+git cm "client - building compensation items: extract TablePanel component in proper file"
+g ad
+git cm "client - building compensation items: extract DistributePanel component in proper file"
+g ad
+git cm "client - building compensation items: reorder imports, split generic from meter-readings"
+g ad
+g ad "client: move query from meter-readings/distribute-compensation-item upper level"
+g cm "client: move query from meter-readings/distribute-compensation-item upper level"
+git ad
+g cm "client: move some components from meter-readings/distribute-compensation-item upper level"
+g s
+g ad
+g can
+g ad
+g can
+g s
+g co client/src/pages/building-account/compensation-items/distribute-panel.tsx client/src/pages/meter-readings/distribute-compensation-item/helpers.ts
+git s
+g ad
+g cm "client - distribute compensation items: make building table indipendent from meter-readings "
+git pr
+m check-all
+g ps
+g pl
+g co .
+g ad
+g cm "server - seed: replace not clear building compensation item"
+g ad
+g cm "server - seed: replace not clear building compensation item"
+g l
+g ps
+code client
+g l
+g pl
+m seed-db
+g l1
+g ad
+git cm "client - building compensation items: move reused logic in shares/core"
+g ad
+git cm "client - building compensation items: extract common distribute compensation item"
+g ad
+g can
+g ad
+git cm "client - building compensation items: move reused logic near to common distribute compensation item component"
+g ad
+g can
+g ad
+g can
+g rebase -i
+m seed-db
+g diff
+g ad
+g cm "client - meter readings: reuse common DistributeCompensationItem component"
+g l1
+g ad
+g can
+g s
+g ad
+g cm "client - shared: remove duplication and use better name for individual-account.helpers"
+npm test
+npm testw
+npm run testw
+jest
+npm run test:watch
+npm run test
+npm run gql:gqn
+npm run gql:gen
+npm run test
+npm run gql:gen
+npm run test
+scrcpy
+cd dev/spikes/
+rider
+g co .
+npm run update-graphql-schema.sh 
+npm run update-graphql-schema
+npm run gql:gen
+npm run update-graphql-schema
+npm run gql:gen
+villo
+g pl
+code client
+m seed-db
+g s
+g diff
+g cob note-comp-items
+git ad
+git cm "note"
+git co master
+g pl
+g s
+git cob optimistic-concurrency
+g diff
+code server/tests/app.tests/app.tests.csproj 
+g s
+g diff
+g ad
+g cm "server: add optimistic concurrency tests for mongo repository"
+git ca
+git co master
+git pl
+git co optimistic-concurrency 
+git pr master
+g co master
+g co optimistic-concurrency
+g s
+g ad
+g cm "server: prototype updated versioned"
+g co master
+m seed-db
+g pl
+g s
+git pl
+g s
+g co server/src/app/Modules/Share/Features/CalculateShare/CalculateShareCommandHandler.cs server/src/app/Modules/Share/Features/CalculateShare/CalculateShares.cs
+m seed-db
+g s
+g diff
+g s
+g ad server/src/app/Modules/Share/AmountCompensationPolicies.cs server/tests/app.tests/Modules/Share/EquallySplitAmountTests.cs server/tests/app.tests/Modules/Share/ProportionallySplitAmountTests.cs server/tests/app.tests/Modules/Share/BuildingSharesTests.cs
+g diff --cached
+g cm "server - calculate shares: add ability to change amount policy target"
+g s
+g ad server/src/app/Modules/Share/AmountCompensationPolicies.cs server/tests/app.tests/Modules/Share/ProportionallySplitAmountTests.cs
+g cm "server - calculate shares: remove old unused proportionally by volume amout split policy"
+git cob building-comp-items
+git ad
+git cm "wip"
+git co master
+g l
+git pr
+m check-all
+g ps
+g pl
+m check-all
+m seed-db
+g pl
+code client
+g ad
+g s
+g cm "client - meter readings: make buildingId a link to building details page"
+g ps
+g s
+g diff
+git ad
+git cm "server - calculate shares: begin parallel IndividualAccountShare implementation"
+git show
+g s
+g diff
+git ad
+git can
+g ad
+git cm "server - calculate shares: add all volume data"
+m seed-db
+g s
+g diff
+g co .
+m seed-db
+g s
+g pr
+m check-all
+git ad
+git cm "client: remove console.log"
+g ps
+bat Makefile 
+m seed-db-prod
+g pl
+g s
+g plk
+g pl
+g ad
+g cm "server: minor tests refactoring"
+m check-all
+g ad
+g l
+g cm "server - calculate shares: add more tests for parallel IndividualAccountShare"
+g ad
+g cm "server - calculate shares: fill data DTO  parallel IndividualAccountShare"
+g ad
+g cm "server - calculate shares: refactor BuildingShares"
+git co .
+g s
+g ad
+g cm "server - calculate shares: replace IndividualAccountShare with parallel implementation"
+g pr
+m check-all
+g ps
+g s
+g diff
+git ad
+g cm "server - calculate shares: begin remove old unused stuff"
+g ad
+g cm "server - calculate shares: evidence 'add' nature of various methods"
+g ad
+g can
+g s
+g ad
+g cm "server: replace VolumeShare.Total state w/ on-demand computed value "
+m seed-db
+g ad
+g cm "server: replace AmountShare.{Total,FinalTotal} state w/ on-demand computed value"
+g ad
+g cm "server - calculate shares: rename props"
+g ad
+g can
+git ad
+g cm "server - calculate shares: move logic from IndividualAccountShare to VolumeShare"
+g ad
+g cm "server - calculate shares: move logic from IndividualAccountShare to AmountShare"
+g ad
+g cm "server - calculate shares: remove old unused stuff"
+g ad
+g cm "server - calculate shares: final remove old unused stuff"
+git pr
+g ps
+g s
+g ad server/src/app/Modules/Share/Features/UpdateBuildingQuotation/Validations/AmountShareValidation.cs
+g ad server/src/app/Modules/Share/Features/UpdateBuildingQuotation/Validations/BuildingAccountSharesDataValidation.cs server/src/app/Modules/Share/Features/UpdateBuildingQuotation/Validations/IndividualAccountSharesDataValidation.cs server/src/app/Modules/Share/Features/UpdateBuildingQuotation/Validations/VolumeShareValidation.cs
+g cm "server - quotations: reuse AmountShare and VolumeShare smart constructor"
+g show
+g undo
+g ad server/src/app/Modules/Share/Features/UpdateBuildingQuotation/Validations/AmountShareValidation.cs
+g ad server/src/app/Modules/Share/Features/UpdateBuildingQuotation/Validations/BuildingAccountSharesDataValidation.cs server/src/app/Modules/Share/Features/UpdateBuildingQuotation/Validations/IndividualAccountSharesDataValidation.cs server/src/app/Modules/Share/Features/UpdateBuildingQuotation/Validations/VolumeShareValidation.cs
+g cm "server - quotations: reuse AmountShare and VolumeShare smart constructor"
+g show
+g ad
+git ca
+g ad
+g cm "server: move tests in proper folder"
+g s
+g ad
+g cm "server: remove very old unused stuff"
+g ad
+g cm "server: rename"
+g ad
+g cm "server - calculate shares: change return type into ValidationResult"
+git bs
+g show building-comp-items
+g s
+g ad
+g cm "server - calculate shares: cannot compute shares if there are invalid building compensation items"
+g ad
+g cm "server - calculate shares: add buldingCompensationItems to Command"
+g ad
+g cm "server - calculate shares: refactor test"
+g ad
+g cm "server - calculate shares: use VolumeShare in BuildingShares"
+g ad
+g cm "server - calculate shares: use AmountShare in BuildingShares"
+g ad
+g cm "server - calculate shares: refactor BuildingShares"
+g ad
+g cm "server - calculate shares: distribute water related building compensation items"
+g ad
+g can
+g ad
+g cm "server - calculate shares: compute building compensation items total based on category"
+g ad
+g cm "
+server: minor refactoring"
+g l
+g ad
+g cm "server - calculate shares: move tests near to real sut"
+g ad
+g cm "server - calculate shares: add water related building compensation items total amount to final amount"
+g pr
+m check-all
+g ps
+g ad
+g cm "server: minor refactoring"
+g ad
+g cm "server - calculate shares: check buildingCompensationItems status"
+git ad
+git can
+g ad
+g cm "server - calculate shares: check individualCompensationItems status"
+g ad
+g cm "server - calculate shares: add buildingCompensationItems reference to BuildingShares"
+g ad
+g can
+g ad
+b can
+g can
+m seed-db
+g s
+g ad
+g cm "server - calculate shares: re-introduce buildingCompensationItems resolver on BuildingSharesData"
+g pr
+m check-all
+g ps
+g pl
+g s
+g ad
+g cm "server - quotations: re-introduce SelectedBuildingCompensationItems and the ability to mark as used on quotation completion"
+g ad
+g ca
+g ad
+g can
+g pr
+m check-all
+g ps
+g pr
+m check-all
+g ps
+g ad
+g s
+g diff
+g show
+g diff --cached
+g cm "server - calculate shares: distribute individual compensation items"
+g ad
+g cm "server - calculate shares: refactor collections"
+g s
+g ad
+g cm "server - calculate shares: refactor move logic from BuildingShares to IndividualShare"
+g ad
+g can
+g ad
+g diff --cached
+g cm "server - calculate shares: refactor from list of full IndividualCompensationItems to list of Ids"
+g ad
+g cm "server - invoices: add water related compensation items to compensation invoice detail"
+g pr
+g sc
+g ad
+g rebase --continue
+m check-all
+g ad
+g cm "server: expose on AmountShare node the TotalWaterCompensation"
+g ps
+m seed-db
+g pl
+g co .
+g pl
+git s
+g ad
+g cm "server: when the addition of a small innocent field break the build
+"
+g ps
+g diff
+g s
+g ad
+g cm "server - quotations: store distributed building compensation items"
+g ad
+g cm "server - quotations: specify more input for update quotation system test"
+g ad
+g cm "server - compensation items: query method on buldingCompensationItem to check if it's water related"
+m seed-db
+code client
+g ad
+g cm "client - building account: restore billingPeriod column on compensation items"
+g s
+g show
+g ad
+g can
+g ad
+g cm "client - compensation items: disable distribute button for water related buildingCompensationItems"
+g ad
+g cm "server - compensation items: change distribute item return type"
+g ad
+g cm "server - compensation items: do not distribute already used item and water related item"
+g ad
+g cm "server - compensation items: do not distribute on unrelated individuals"
+g ad
+g can
+g pr
+m check-all
+g s
+g pr
+m check-all
+m run-client
+m run-infra
+m run-api
+cd server/src/
+dotnet clean
+ll
+cd app
+dotnet clean
+dotnet run
+ll
+rm -rf obj bin
+dotnet build
+rm -rf obj bin
+dotnet build
+...
+..
+m run-api
+g s
+g diff server/src/app/app.csproj 
+g co server/src/app/app.csproj 
+m run-api
+rider
+m run-infra
+cd dev/spikes/DlEndo/
+dn run
+ll
+code .gitignore
+git init
+g ad .gitignore
+g cm "add gitignore"
+g s
+g ad
+g cm "produced code"
+code README.md
+g s
+rm package.json 
+g ad README.md 
+g cm "add readme w/ links"
+g s
+git remote add origin https://github.com/matteobaglini/design-review-endomorphism.git
+git branch -M main
+git push -u origin main
+scrcpy
+rider
+npx tsc --noemit --watch
+npm run update-graphql-schema
+npm run gql:gen
+cd src/dbimporter/bin/Debug/netcoreapp3.1/
+./dbimporter 
+ll
+docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=p4ssw0rd1!' --name 'sql-villoresi' -p 1401:1433 -v sql-villoresi-data:/var/opt/mssql -d mcr.microsoft.com/mssql/server:2019-CU3-ubuntu-18.04
+docker exec -it sql-villoresi mkdir /var/opt/mssql/backup
+docker cp mssqldb-villoresi/villoresi_app_2020_06_12.bak sql-villoresi:/var/opt/mssql/backup
+docker cp ./mssqldb/villoresi_app_2020_06_12.bak sql-villoresi:/var/opt/mssql/backup
+docker exec -it sql-villoresi /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'p4ssw0rd1!' -Q 'RESTORE FILELISTONLY FROM DISK = "/var/opt/mssql/backup/villoresi_app_2020_06_12.bak"'
+docker exec -it sql-villoresi /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'p4ssw0rd1!' -Q 'RESTORE DATABASE Villoresi FROM DISK = "/var/opt/mssql/backup/villoresi_app_2020_06_12.bak" WITH MOVE "insigeco_villoresi_app" TO "/var/opt/mssql/data/insigeco_villoresi_app.mdf", MOVE "insigeco_villoresi_app_log" TO "/var/opt/mssql/data/insigeco_villoresi_app_log.ldf"'
+cd server/src/dbimporter/bin/Debug/netcoreapp3.1/
+ll
+./dbimporter 
+...
+g pl
+npm run gql:gen
+npm test
+npm run gql:gen
+npm run update-graphql-schema
+npm run gql:gen
+npm run update-graphql-schema
+npm run gql:gen
+npm test
+g s
+npm test
+npm run gql:gen
+npm run update-graphql-schema
+npm run gql:gen
+npm test
+spike
+spikes
+dl
+ll
+cd EndoDemo/
+ll
+cd ..
+rm -rf EndoDemo/
+..
+cd spikes/
+ll
+cd DlEndo/
+ll
+g s
+g ad
+g s
+g cm "add f# porting"
+g ps
+..
+rm DlEndo/
+ll
+rm -rf DlEndo/
+rm -rf figa/
+rm -rf hot-wrapper/ mongo-query/ parsiamo/ safefs/ SaturnSample/ try-async
+ll
+rm -rf 'tc-istances (copy)'/
+ll
+g s
+docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=p4ssw0rd1!' --name 'sql-villoresi' -p 1401:1433 -v sql-villoresi-data:/var/opt/mssql -d mcr.microsoft.com/mssql/server:2019-CU3-ubuntu-18.04
+scrcpy
+villo
+g pl
+g l
+git throw
+g s
+g l
+g pr
+m check-all
+code client
+g l
+g ad
+c "client: fix types"
+g cm "client: fix types"
+g ps
+m check-all
+g ad
+g reset
+g s
+g ad 
+g cm "server: just a method rename"
+g ps
+g pl
+m seed-db
+g co .
+code 
+g ad
+g cm "client,server - compensation items: not nullable connection/edge nodes"
+code client
+g ad 
+g can
+g ps
+g ad
+g cm "server: split test suite"
+g ad 
+g cm 
+g cm "server - compensation items: define the rest of all categories"
+g ad
+g cm "server - shares: add services and expenses amounts"
+g ad
+g cm "server - calculate shares: put individualCompensationItems on the right amount part"
+g pr
+m check-all
+g ps
+m seed-db
+g ad
+g cm "client,server - meter readings: load and save new quotation's amount fields"
+m seed-db
+g ps
+g ad
+g cm "client - meter readings: remove wrong column from simulated invoice table" 
+g ad
+g cm "client - meter readings: map shares table's compensation amount column to totalWaterCompensation amount"
+g ad
+g cm "server: minor refactoring"
+g ad
+g can
+g ad
+g can
+g ad
+g s
+g cm "client - meter readings: map all calculareShare amounts result to shares table columns"
+g ps
+g ad
+g cm "client - meter readings: hide building/individuals compensation items table"
+g ad
+g cm "client - meter readings: show water related building compensaiton items table"
+g ad
+g cm "client - meter readings: stop send select/unselect compensaiont items events"
+g pr
+g ps
+g s
+g diff
+g ad
+g cm "client - meter readings: select/unselect water related buildingCompensaiontItems"
+g pr
+g ps
+g ad
+g cm "client - meter readings: store selected buildingCompensaiontItems"
+g pr
+g ps
+m check-all
+g ad
+g cm "server: fix broken test"
+g pr
+m check-all
+g ps
+m seed-db
+g ad
+g cm "client - meter readings: pass selected buildingCompensaiontItems to calculateShares"
+m check-all
+g ad
+g cm "client - meter readings: show old buildingCompensaiontItems w/out water related items"
+g as
+g s
+g diff
+g ad
+g cm "client - meter readings: duplicate buildingCompensaiontItems table row component"
+g ad
+g cm "client - meter readings: remove checkbox for not water buildingCompensaiontItems"
+g d
+g s
+g ad
+g cm "client - meter readings: use type table row for not water buildingCompensaiontItems"
+m seed-db
+g ad
+g cm "client - meter readings: select all individualCompensationItems generated from a  buildingCompensaiontItem distribution"
+g pt
+g pr
+m check-all
+g ad
+g can
+g ps
+g ad
+g cm "client - meter readings: re-introduce individualCompensationItems table"
+g ad
+g cm "client - meter readings: simplify individualCompensationItems table model"
+g adf
+g ad
+g can
+g ad
+g cm "client - compensation items: define the rest of all categories"
+g ad
+g cm "client - meter readings: show only individualCompensationItems w/out parent item"
+g s
+g ad
+g cm "client: fix typo"
+g s
+g ad
+g cm "client - meter readings: select/unselect individualCompensationItems"
+m seed-db
+g s
+g diff
+g ad
+g cm "client - meter readings: trigger calculateShare after buildingCompensationItem distribution"
+g pr
+m check-all
+g ps
+g ad
+g cm "client: remove unused file"
+g ad
+g s
+g cm "client - meter readings: individualAccounts clickable on compensation items tab"
+g ad
+g cm "client - meter readings: properly merge quotation and loaded buildingCompensationItems"
+g pr
+m check-all
+g ps
+g ad
+g cm "server - issue invoice: add services invoice detail"
+g ad
+g cm "server - issue invoice: add expenses invoice detail"
+g ad
+g cm "server - compensation items: define credit/debit category"
+git ad
+git ca
+g pr
+m check-all
+g ad
+g cm "server - quotations: add credits/debits amount"
+m seed-db
+g ad
+g cm "client - meter readings: load and save credits/debits amount"
+g ad
+g cm "server - quotations: make credits/debits amount mandatory"
+g ad
+g cm "client,server - quotation: rename total in totalWater"
+g ad
+g can
+g ad
+g can
+m check-all
+g ps
+g ad
+g cm "server - calculate shares: specify more fields in graphql system test"
+g ad
+g cm "client,server - quotations: rename finalTotal in totalShare"
+g ad
+g can
+g ad
+g can
+g s
+g ad
+g l
+g ca
+m seed-db
+g ad
+g can
+g ad
+g can
+g ad
+g can
+m seed-db
+g l
+g ad
+g cm "server - quotations: add credits/debits to totalFinal amount"
+g ad
+g cm "server - calculate shares: distribute credits/debits into proper amount field"
+g s
+g ad
+g cm "server - issue invoice: add credits/debits detail amount"
+g ad
+g cm "server - invoices: use N1 only for water related details and N2 for the rest (https://www.notion.so/doubleloop/2020-10-06-Review-Meeting-175d4fa7bd9a419ba4dcb15f7c9bb807#c16bee51a5114e009c47d025104ab9dd)"
+g pr
+m check-all
+g ad
+g cm "client - meter reading: use totalShare instead of totalFinal)
+"
+g ca
+g s
+g ad
+g cm "client - meter reading: do not show credits/debits compensation items
+"
+m check-all
+g ps
+g s
+g ad
+g cm "server - quotations: load all building's individual on nextQuotation"
+g ad
+g cm "server - quotations: use building's individual to fill nextQuotation individuals"
+m seed-db
+g s
+g diff
+g ad
+g cm "client - meter reading: fi"
+m seed-db
+g s
+g ad
+g cm "server - quotations: refactor NextQuotationPolicy"
+g s
+g ad
+g cm "server - quotations: more refactor NextQuotationPolicy"
+g pr
+m check-all
+g ps
+g pl
+g s
+g ad
+g cm "server: minor cleanup"
+g ps
+g s
+g diff
+g co .
+g pr
+g psd
+g ps
+g s
+g ad
+g cm "server - invoices: remove generic detail type"
+m check-all
+g ps
+g pr
+m check-all
+g ps
+g co .
+g ps
+g co .
+g l
+g pl
+g ad
+g cm "server - calculate shares: add conversion from BuildingConsumptions to BuildingShares w/out doing shares calculation"
+g s
+g diff
+g s
+g ad
+g reset server/src/app/Modules/Share/BuildingShares.cs
+g cm "server - calculate shares: add RateCategory to IndividualAccountShare"
+g ad
+g cm "server - calculate shares: move CalculateShares into BuildingShares"
+g ad
+g can
+g ad
+g can
+g ad
+g can
+g s
+g ad
+g can
+g ad
+g can
+g ad
+g can
+g pr
+m check-all
+g ps
+g ad
+g cm "server - calculate shares: evidence SplitFixedFeeOverHolders step"
+g co .
+g ad
+g s
+g ad
+g cm "server - calculate shares: refactor tests"
+m seed-db
+code client
+g diff
+g s
+g ad client
+g cm "client - meter reading: trigger calculateShared after quotation machine loaded"
+g s
+g diff
+g s
+g co .
+gi tpr
+g pr
+m check-all
+g s
+g diff
+g ad
+g cm "client - meter reading: comment trigger calculateShared after quotation machine loaded (it works, but it doens't compile)"
+m check-all
+g ps
+g pr
+m check-all
+g ps
+g pr
+g ps
+g s
+g diff
+g as
+g ad
+g cm "server - calculate shares: on contractChange split exit holder fixedFee over all individualAccount's holders"
+m seed-db
+g s
+g ad
+g cm "client - meter reading: fix an old rename"
+g pr
+m check-all
+g ps
+g pl
+g s
+g l
+g pl
+g s
+g ad
+g cm "wip"
+g cm "wip" -n
+git reset
+g s
+g l
+g undo
+git cob iva
+g ad
+g cm "wip" -n
+g co master
+m seed-db
+g s
+g diff
+g co .
+code client
+m seed-db
+m seed-db-prod
+m seed-db
+m seed-db-prod
+g pl
+git log --format=format: --name-only --since=12.month  | egrep -v '^$'  | sort  | uniq -c  | sort -nr  | head -50
+git log --format=format: --name-only --since=12.month  | egrep -v '^$'  | egrep -v '\.json$'  | sort  | uniq -c  | sort -nr  | head -50
+g pl
+g l
+bat server/src/app/Extensions/TExtensions.cs
+cat server/src/app/Extensions/TExtensions.cs
+g pl
+code client
+g pl
+m seed-db-prod
+g pl
+cd client/
+npx tsc --noemit --watch
+npm run test:all
+npx tsc --noemit --watch
+npm run cy:open
+npx tsc --noemit --watch
+m run-client
+m run-api
+m run-infra
+cdrider
+rider
+cd dev/av/
+ll
+mkdir studiopharma
+cd studiopharma/
+git init
+gvim .gitignore
+g ad
+g cm "add gitignore
+"
+cd ..
+g clone https://github.com/doubleloop-io/profit-calculator-kata.git
+cd profit-calculator-kata/
+rm -rf .git
+ll
+rm .gitignore 
+cd ..
+mv profit-calculator-kata/ studiopharma/
+cd studiopharma/
+cd profit-calculator-kata/
+gvim ProfitCalculatorKata.csproj 
+code ProfitCalculatorKata.csproj 
+ll
+rm ProfitCalculator.sln.DotSettings.user 
+mv villoresi.sln.DotSettings.user ProfitCalculator.sln.DotSettings.user
+..
+g s
+g ad
+g s
+g cm "add profit calculator kata"
+cd fizz-buzz-kata
+mkdir fizz-buzz-kata
+cd fizz-buzz-kata/
+cp ../profit-calculator-kata/* .
+cp ../profit-calculator-kata/ .
+cp -r ../profit-calculator-kata/ .
+ll
+rm -rf .
+..
+rm -rf fizz-buzz-kata/*
+cd fizz-buzz-kata/
+ll
+code README.md
+..
+g s
+g ad
+g s
+g cm "add fizzbuzz kata"
+code pay-term-kata/README.md
+g s
+ll 
+g ad
+g s
+g cm "add pay term kata"
+ll profit-calculator-kata/
+nautilus
+nautilus .
+g s
+g ad
+g cm "remove redundant folder"
+g s
+g ad
+g cm "add one more guard to Invoice"
+cd birthday-greetings-kata/
+nautilus .
+..
+g s
+g ad
+g s
+g cm "add birthday greetings kata"
+code birthday-greetings-kata/README.md
+g ad
+g can
+cd book-store-kata/
+nautilus .
+..
+g s
+g ad
+g cm "add book-store-kata"
+code .gitignore
+g s
+g ad
+g cm "add visual studio to gitignore"
+g s
+ll
+ll birthday-greetings-kata/
+g s
+g ad
+g s
+g cm "update birthday greetings
+"
+g ad
+g can
+g ad
+g can
+nautilus .
+g s
+g ad
+g cm "add mru kata"
+g s
+ll
+mv pay-term-kata static-vs-dynamic-dispatch-kata
+cd static-vs-dynamic-dispatch-kata/
+ll
+nautilus .
+g s
+g ad
+g s
+g cm "generalize pay term kata"
+g ad
+g cm "move files in forlder"
+g s
+cd ..
+g s
+g ad
+g cm "add date of birth to static vs dynamic dispatch"
+ll
+g s
+g ad
+g cm "add mars rover kata skeleton w/ empty solution and demo projets ready to load"
+g ad
+g s
+g ad
+g diff --cached
+g s
+g cm "add domain project for mars rover"
+g ad
+g cm "implement rover logic except obstacles"
+g ad
+g cm "handle obstacle
+"
+g ad
+g cm "add command processor"
+g ad
+g can
+ll
+rm -rf .git
+git init
+g ad .gitignore 
+g cm "add gitignore"
+g ad
+g s
+g cm "add code"
+g ad
+g can
+git remote add origin https://github.com/doubleloop-io/sf-strategic-consulting.git
+git branch -M main
+git push -u origin main
+dev
+cd dev/av/studiopharma/
+m run-api
+dotnet restore
+dotnet restore -h
+dotnet restore ./server/src/app/app.csproj 
+gvim ./server/src/app/app.csproj 
+dotnet restore ./server/src/app/app.csproj 
+m run-api
+g co .
+cat ./server/src/app/app.csproj 
+cd ..
+cd 
+cd dev/spikes/
+mkdir report
+cd report/
+dotnet new -i "DevExpress.DotNet.Web.ProjectTemplates"
+dotnet new webapp
+dotnet new -i Microsoft.DotNet.Web.ProjectTemplates.3.1::3.1.9
+docker build
+docker build .
+docker run
+docker run .
+gvim .dockerignore
+docker build .
+docker build -t aspnetapp .
+docker run -d -p 8080:80 --name myapp aspnetapp
+docker ps
+docker ps -a
+docker stop 80a380a7448b
+docker rm 80a380a7448b
+docker ps -a
+docker run --rm -it -p 8000:80 mcr.microsoft.com/dotnet/core/samples:aspnetapp
+docker build --pull -t aspnetapp .
+docker run --rm -it -p 8000:80 aspnetapp
+cd ..
+git clone https://github.com/dotnet/dotnet-docker.git
+cd dotnet-docker/samples/
+ll
+cd aspnetapp/
+ll
+docker build --pull -t aspnetapp .
+docker run --rm -it -p 8000:80 aspnetapp
+code Dockerfile
+docker build --pull -t aspnetapp .
+docker run --rm -it -p 8000:80 aspnetapp
+docker build --pull -t aspnetapp .
+villo
+git pl
+ll
+cat Makefile 
+bat .github/workflows/aws.yml 
+make build-server
+bat .github/workflows/aws.yml 
+bat deploy.sh 
+cat deploy.sh 
+g s
+git co .
+g bs
+g bd building-comp-items note-comp-items
+g bs
+git co devexpress_spike
+m run-infra
+g s
+g ad
+g s
+g cm "add mru solutions
+"
+g ad
+g l
+g ca
+g ad
+g can
+g s
+g diff
+g ad
+g can
+g s
+g diff static-vs-dynamic-dispatch-kata/PayTermKata/Invoice_Start.cs
+g co static-vs-dynamic-dispatch-kata/PayTermKata/Invoice.cs
+g diff static-vs-dynamic-dispatch-kata/StaticVsDynamicDispatchKata.csproj
+g co static-vs-dynamic-dispatch-kata/StaticVsDynamicDispatchKata.csproj
+g ad
+g can
+g s
+g diff
+g s
+g ad
+g can
+g ps
+g s
+git co mru-kata/TrackLastOpenFiles.cs
+ocker run -v $PWD:/data mribeiro/cloc .
+docker run -v $PWD:/data mribeiro/cloc .
+g s
+g diff
+g ad
+g cm "firt edits"
+g ps
+cd ..
+cd ynap/
+cd WMS/
+git clone https://github.com/doubleloop-io/wms-birthday-greetings-kata.git
+rider
+cd dev/av/studiopharma/
+nautilus .
+g s
+g ad
+g cm "add full solutions for birthday-greetings-kata"
+g ps
+exir
+exitr
+rider
+intellij-idea-community 
+scrcpy
+cd dev/av/studiopharma/
+g ad
+g l
+g cm "more edits"
+g ps
+docker run -v $PWD:/data mribeiro/cloc .
+nautilus .
+g s
+g
+g ad
+g l
+g cm "last edits"
+g ps
+cd ../
+cd ..
+cd spikes/
+git clone https://github.com/lucapiccinelli/eitherForValidation.git
+dn watch run
+villo
+g co .
+...
+cd dotnet-docker/
+g rs
+..
+cd dotnet-docker/
+g co .
+cd samples/aspnetapp/
+ll
+docker rmi aspnetapp
+docker build --pull -t aspnetapp .
+docker run --rm -it -p 8000:80 aspnetapp
+villo
+docker run --rm -it -p 8000:80 aspnetapp
+g s
+g ad
+g s
+villo
+g co master
+ll
+cd server/
+ll
+cp villoresi.sln.DotSettings ../../../spikes/reportx/
+cp villoresi.sln.DotSettings.user ../../../spikes/reportx/
+rider
+...
+rider
+g s
+rider
+echo $DEVEXPRESS_AUTH_KEY
+cd ..
+mkdir buttami
+cd buttami/
+dotnet new dx.reporting --nuget-feed https://nuget.devexpress.com/vE9SGjIDetOvDis6PtlrdK437KuoqoOIdnRdxuFFPPCkrdM5GN/api --name ReportDesignerApp --add-designer true --add-data-source false
+ll
+mv ReportDesignerApp/NuGet.config .
+dn new sln
+dn sln buttami.sln add ReportDesignerApp/ReportDesignerApp.csproj 
+cd ReportDesignerApp/
+npm i
+..
+git init
+g ad ReportDesignerApp/PredefinedReports/
+g cm "original"
+g s
+g ad
+g cm "all"
+g s
+ll ReportDesignerApp/Reports/
+ll ReportDesignerApp/PredefinedReports/
+rm ReportDesignerApp/
+rm -rf ReportDesignerApp/
+dotnet new dx.reporting --nuget-feed https://nuget.devexpress.com/vE9SGjIDetOvDis6PtlrdK437KuoqoOIdnRdxuFFPPCkrdM5GN/api --name ReportDesignerApp --add-designer true --add-data-source true
+cd ReportDesignerApp/
+rm NuGet.config 
+npm i
+..
+g ad
+g cm "reset"
+cp ReportDesignerApp/Reports/TestReport.repx ReportDesignerApp/PredefinedReports/
+rm ReportDesignerApp/Reports/TestReport.repx 
+mv ReportDesignerApp/PredefinedReports/TestReport.repx ReportDesignerApp/Reports/
+..
+rm -rf buttami/
+cd reportx/
+g s
+cd reportx/
+g s
+echo $DEVEXPRESS_AUTH_KEY
+cd ~
+ll
+vim .bashrc
+source .bashrc
+echo $DEVEXPRESS_AUTH_KEY
+villo
+code .github/
+g s
+g ad
+git cm "build: use latest ubuntu as build machine on github actions"
+g pr
+g ps
+git bs
+git co devexpress_spike 
+g pl
+ll server/
+echo $DEVEXPRESS_AUTH_KEY
+..
+ll
+git co https://github.com/sciamp/mars-rover-kata.git recruiting-sciamp
+git clone https://github.com/sciamp/mars-rover-kata.git recruiting-sciamp
+cd recruiting-sciamp/
+npm install -g pnpm
+pnpm install && pnpm install -r
+pnpm test
+./mctrl 
+./mctrl -f data/input-examples/rover-test
+ll
+cat rover_log_1604596593706.log 
+./mctrl -f data/input-examples-with-syntax-errors/unknown-rover-command
+./mctrl -f data/input-examples-with-syntax-errors/missing-trailing-new-line
+cd ..
+cd ../spikes/
+ll
+cd dotnet-docker/
+g s
+code samples/aspnetapp/Dockerfile
+cd ..
+mkdir reportx
+cd report
+cd //
+cd ~/dev/spikes/reportx/
+dn new
+dotnet new dx.reporting --nuget-feed https://nuget.devexpress.com/FfnwdpbQRhPBRk55UokryCuxNxTfCWVepUHMGMAqFAcf9L7tms/api --name ReportDesignerApp --add-designer true --add-data-source true
+ll
+cd ReportDesignerApp/
+ll
+npm install
+dotnet restore
+code .
+dotnet restore -h
+dotnet restore --s https://nuget.devexpress.com/FfnwdpbQRhPBRk55UokryCuxNxTfCWVepUHMGMAqFAcf9L7tms/api
+dotnet restore -s https://nuget.devexpress.com/FfnwdpbQRhPBRk55UokryCuxNxTfCWVepUHMGMAqFAcf9L7tms/api
+dn
+...
+rm -rf report reportx
+ll
+rm -rf eitherForValidation/ leila-school/ QafooExtractingValueObjects/ Rabbitton/ Ruzzini/
+ll
+mkdir reportx
+cd reportx/
+dotnet new dx.reporting --nuget-feed https://nuget.devexpress.com/vE9SGjIDetOvDis6PtlrdK437KuoqoOIdnRdxuFFPPCkrdM5GN/api --name ReportDesignerApp --add-designer true --add-data-source true
+cd ReportDesignerApp/
+npm i
+dn restore
+dn run
+g init
+g ad
+g cm "all"
+dn run
+g s
+dn run
+dn watch run
+g s
+g diff ReportDesignerApp.csproj 
+g co ReportDesignerApp.csproj 
+dn watch run
+rm -rf .git
+code .gitignore
+git init
+g ad .gitignore 
+g cm "add gitignore"
+g ad
+g cm "first"
+g s
+g ad
+g cm "add villoresi reports"
+g s
+..
+code .
+cd ReportDesignerApp/
+dotnet add package DevExpress.CrossPlatform.Printing.DrawingEngine
+sudo apt-get update  
+sudo apt-get install -y software-properties-common  
+sudo add-apt-repository 'deb http://deb.debian.org/debian sid main' 
+sudo apt-get update 
+sudo apt-get install libgdiplus
+sudo apt-get install libicu-dev libharfbuzz0b libfontconfig1 libfreetype6
+sudo apt-get install libpango-1.0-0
+sudo apt-get install libpangocairo-1.0 
+g s
+g ad
+g s
+g cm "trim implementation"
+g ad
+g cm "clean up"
+g ad
+g cm "add print to pdf (either open or download)"
+nautilus .
+docker build --pull -t aspnetapp .
+g s
+docker build --pull -t aspnetapp .
+dn restore -n
+dn restore ReportDesignerApp.csproj 
+docker build --pull -t aspnetapp .
+cd ..
+dn new sln
+dotnet new -i Microsoft.DotNet.Common.ItemTemplates::3.1.9
+ll
+rm reportx.sln ReportDesignerApp.sln
+nautilus .
+mv ReportDesignerApp/.git .
+dn sln
+mv ReportDesignerApp aspnetapp
+rm aspnetapp/Dockerfile 
+dn sln add aspnetapp/ReportDesignerApp.csproj 
+dn sln ReportDesignerApp.sln add aspnetapp/ReportDesignerApp.csproj 
+..
+cd reportx/
+ll
+cd aspnetapp/
+ll
+..
+dn new sln
+mv reportx.sln ReportDesignerApp.sln
+ll
+dn sln ReportDesignerApp.sln add aspnetapp/ReportDesignerApp.csproj 
+dotnet restore
+dn run
+dn run -p aspnetapp/ReportDesignerApp.csproj 
+g ad
+g cm "restructure directories and add a solution file"
+code Dockerfile
+ll aspnetapp/
+docker build --pull -t aspnetapp .
+nautilus .
+..
+cd reportx2/
+dn restore
+cd ..
+rm -rf reportx2/
+cd reportx/
+docker build --pull -t aspnetapp .
+code aspnetapp/ReportDesignerApp.csproj 
+docker build --pull -t aspnetapp .
+dotnet publish -c release -o /app --no-restore
+mkdir app
+dotnet publish -c release -o /app --no-restore
+dotnet publish -c release --no-restore
+dotnet publish -c release -o app/ --no-restore
+ll app/
+dotnet publish -c release -o app --no-restore
+rm -rf app/
+dotnet publish -c release -o app --no-restore
+docker build --pull -t aspnetapp .
+dotnet publish -c release -o app --no-restore
+docker build --pull -t aspnetapp .
+ll aspnetapp/
+docker build --pull -t aspnetapp .
+dotnet clean
+rm -rf aspnetapp/obj aspnetapp/bin
+docker build --pull -t aspnetapp .
+docker run --rm -it -p 8000:80 aspnetapp
+docker build --pull -t aspnetapp .
+docker run --rm -it -p 8000:80 aspnetapp
+docker run 
+docker run -h
+ll app/
+docker run --rm -it -p 8000:80 aspnetapp
+docker build --pull -t aspnetapp .
+docker run --rm -it -p 8000:80 aspnetapp
+docker build --pull -t aspnetapp .
+OA
+docker build --pull -t aspnetapp .
+docker run --rm -it -p 8000:80 aspnetapp
+docker build --pull -t aspnetapp .
+docker run --rm -it -p 8000:80 aspnetapp
+g s
+rm -rf app
+g s
+g ad
+g cm "add docker"
+ll
+mv aspnetapp/.gitignore .gitignore
+code .gitignore
+g ad
+g cm "move gitignore and add bundler output" 
+dn clean
+dn build
+g s
+g ad .gitignore 
+g can
+g s
+g ad .gitignore 
+g can
+g s
+docker build --pull -t aspnetapp .
+dn clean
+docker build --pull -t aspnetapp .
+rm -rf aspnetapp/obj aspnetapp/bin
+docker build --pull -t aspnetapp .
+docker run --rm -it -p 8000:80 aspnetapp
+git remote add origin https://github.com/doubleloop-io/devexpress-report-designer.git
+git branch -M main
+git push -u origin main
+dn new
+docker run --rm -it -p 8000:80 aspnetapp
+cd aspnetapp/
+dn run
+dn restore
+dn run
+dn watch run
+cd ..
+code README.md
+g s
+git ad README.md 
+g cm "add README"
+g co .
+g s
+rm aspnetapp/Reports/MyTest.repx
+rm aspnetapp/Reports/MyTest2.repx 
+g s
+code .dockerignore
+docker images
+docker rmi aspnetapp
+echo "docker build --pull -t aspnetapp ." > build.sh
+chmod +x build.sh 
+./build.sh 
+echo "docker run --rm -it -p 8000:80 aspnetapp" > run.sh
+chmod +x run.sh 
+./run.sh 
+code *.sh
+./build.sh 
+./run.sh 
+g s
+g ad .dockerignore 
+g cm "add dockerignore"
+g ad 
+g cm "add utility build/run scripts"
+g ps
+mv aspnetapp/NuGet.config .
+ll
+code Dockerfile 
+./build.sh 
+cd aspnetapp/node_modules/devextreme/dist/css/icons/
+ll
+docker system prune -a
+docker ps -a
+..
+...
+..
+g s
+git ad
+git cm "move up NuGet.config"
+g ps
+g cc
+g
+g s
+./build.sh 
+npm -v
+./build.sh 
+./run.sh 
+g s
+g ad
+g cm "add npm install step"
+g ps
+./build.sh 
+ll
+mv aspnetapp ReportDesignerApp
+mv ReportDesignerApp aspnetapp
+dn sln
+dn sln ReportDesignerApp.sln remove aspnetapp/ReportDesignerApp.csproj 
+mv aspnetapp ReportDesignerApp
+dn sln ReportDesignerApp.sln add ReportDesignerApp/ReportDesignerApp.csproj 
+./build.sh 
+g s
+g ad
+g s
+g cm "change project folder name and reorder Dockerfile steps"
+g ps
+ll
+rm -rf ReportDesignerApp
+cp ../buttami/ReportDesignerApp/ .
+ll
+mv villoresi.sln.DotSettings ReportDesignerApp.sln.DotSettings
+mv villoresi.sln.DotSettings.user ReportDesignerApp.sln.DotSettings.user
+cp -r ../buttami/ReportDesignerApp/ .
+g s
+g ad
+g s
+ll ReportDesignerApp/Reports/
+touch ReportDesignerApp/Reports/.gitkeep
+g ad
+g s
+g cm "strip disigner implementation to miminal"
+g s
+g ad
+g cm "code clean up"
+./build.sh 
+./run.sh 
+g s
+g ps
+./run.sh 
+g s
+rm ReportDesignerApp/Reports/ReportDiProva.repx ReportDesignerApp/Reports/ReportRicco.repx
+g s
+docker ps
+docker ps -a
+ll ReportDesignerApp/Reports/
+cp run.sh stop.sh
+ll
+code stop.sh 
+./stop.sh 
+rm ReportDesignerApp/Reports/ReportDiProva.repx ReportDesignerApp/Reports/ReportRicco.repx
+g s
+g ad
+g cm "mount docker volume for reports"
+cp ../../dl/villoresi/.github .
+cp -r ../../dl/villoresi/.github .
+ll .github/
+ll .github/workflows/
+code .github/workflows/
+rm .github/workflows/pr-ci.yml 
+mv .github/workflows/aws.yml ci.yml
+ll
+mv ci.yml .github/workflows/
+ll .github/workflows/
+g s
+g ad
+g s
+g cm "activate minimal github actions CI"
+g ps
+code .github/workflows/ci.yml 
+ll
+rm -rf .idea/
+g s
+g ad
+g cm "change designer height"
+g ps
+export DEVEXPRESS_AUTH_KEY=AAA
+cat NuGet.config 
+export DEVEXPRESS_AUTH_KEY=vE9SGjIDetOvDis6PtlrdK437KuoqoOIdnRdxuFFPPCkrdM5GN
+echo $DEVEXPRESS_AUTH_KEY
+code NuGet.config 
+echo $DEVEXPRESS_AUTH_KEY
+rider
+g s
+g ad
+g cm "use env variable for devexpress auth_key in NuGet.config"
+g ps
+g ad
+g can
+g ps -f
+env
+./build.sh 
+g ad
+g can
+g ps -f
+g s
+g ad
+g cm "upgrade stuff in ci.yml"
+g ps
+cd ..
+rm -rf reportx/
+cd ..
+cd dl/
+git clone https://github.com/doubleloop-io/devexpress-report-designer.git
+cd devexpress-report-designer/
+./build.sh 
+cp NuGet.config ../villoresi/server/
+code Dockerfile 
+g s
+g ad
+g cm "restore cross-platform rendering engine"
+g ps
+./build.sh 
+cp run.sh ../villoresi/
+villo
+g s
+g diff
+g ad
+g cm "server - report: open pdf inline in the browser"
+g ps
+code .github/workflows/aws.yml 
+g ad
+g cm "build: add devexpress auth key to aws.yml"
+g ps
+g s
+g ad
+g cm "server - reports: add Audit attribute'
+"
+g cm "server - reports: add Audit attribute"
+g ad
+g cm "server - reports: add Audit attribute"
+g ps
+g s
+g ad
+g cm "server - reports: copy reports instead of use them as embedded resources"
+m build-server
+g s
+g co .
+g ps
+g l
+g ll
+g show bb5433e39
+g s
+g diff
+g ad
+g cm "server - reports: select report path based on environment"
+g ps
+g l1
+g pr
+g bs
+code .
+g s
+g ad
+g cm "server - reports: remove "
+g show
+g ca
+g ps
+g pr
+g ps
+g l1
+g show 205593547708b591039c345007e844cd8b8f6dcb
+g show
+sudo apt-get remove libc6-dev
+m build-server
+docker run --rm -it -p 8001:80 docker.io/library/villoresi  
+g s
+g ad server/src/app/Dockerfile
+server/tests/app.tests/Dockerfile
+g cm "server - reports: add apt-get repository"
+vim server/tests/app.tests/mono_crash.21acb2ae56.0.json
+g co .
+g s
+rm server/tests/app.tests/mono_crash.21acb2ae56.0.json
+m build-server
+docker prune
+docker system prune
+m build-server
+g s
+g co server/src/app/AssemblyInfo.cs
+g co server/tests/app.tests/AssemblyInfo.cs 
+m build-server
+g s
+g co server/src/app/AssemblyInfo.cs server/tests/app.tests/AssemblyInfo.cs
+docker run --rm -it -p 8001:80 docker.io/library/villoresi  
+g co .
+g s
+g ps
+m build-server
+g s
+g co server/src/app/AssemblyInfo.cs server/tests/app.tests/AssemblyInfo.cs
+m build-server
+docker system prune
+g co .
+g s
+g diff
+g s
+g diff
+g ad
+g cm "add NuGet.config for DevExpress packages"
+g cm "add NuGet.config for DevExpress packages" -n
+g ps
+git co master
+g s
+g diff
+g ad
+g cm "build: upgrade github checkout action"
+g ps
+g pr
+g ps
+git co devexpress_spike 
+code server/src/app/Dockerfile
+code .
+g s
+g diff
+g ad
+g cm "add devexpress env variable in Dockerfile and Makefile"
+m build-server
+g s
+g co server/src/app/AssemblyInfo.cs server/tests/app.tests/AssemblyInfo.cs
+g s
+g ad
+g cm "server - reports: clean up report rendering logic"
+g cm "server - reports: clean up report rendering logic" -n
+g ps
+git rebase master
+g l
+code .
+m check-all
+m run-api
+m check-all
+g ps
+git ps -f
+g s
+g ad
+g cm "server - reports: update InvoiceDataSource"
+g ps
+git co master
+code .github/workflows/
+g s
+g ad
+g cm "build: use docker buildkit even in CI"
+g ps
+git co devexpress_spike 
+git rebase master
+vim ~/.bash_profile 
+g s
+g ad
+g cm "server - reports: add cross-platform rendering engine"
+code .
+g s
+g ad
+g can
+g ps -f
+code run.sh 
+tree -L 2
+tree -L 3
+tree -L 4
+mkdir server/src/app/Modules/Invoices/Reports
+mkdir server/src/app/Reports
+mv run.sh run-report-designer.sh
+./run-report-designer.sh 
+g s
+ll server/src/app/Reports/
+g ad run-report-designer.sh 
+g cm "server - reports: add utility script to run report designer container"
+cp server/src/app/Modules/Invoices/Reports/Invoice.repx server/src/app/Reports/
+./run-report-designer.sh 
+ll server/src/app/Reports/
+rm server/src/app/Reports/
+rm server/src/app/Reports/Report1.repx 
+g s
+g ad
+g s
+touch server/src/app/Reports/.gitkeep
+g ad
+g cm "server - reports: copy minimal Invoice report to designer folder"
+vim server/src/app/Reports/Invoice.repx 
+./run-report-designer.sh 
+g ad
+g can
+g ps
+rm -rf server/src/app/Modules/Invoices/Reports
+g s
+git co server/src/app/Modules/Invoices/Reports/InvoicesDataSource.cs
+g ad
+g cm "server - reports: remove old reports and update app.csproj configuration"
+g ad
+g can
+g ps
+g s
+g diff
+g ad
+g cm "server - reports: restore memory stram into result and fix routing"
+g ps
+g co master
+g pl
+g co devexpress_spike
+code .
+g s
+g ad
+g cm "server - reports: add libgdiplus even in Docker build stage"
+g ps
+g co master
+g pl
+g bs
+g co devexpress_spike
+git rebase master
+g ps -f
+./run-report-designer.sh 
+g s
+g diff
+./run-report-designer.sh 
+m run-infra
+source ~/.bashrc
+echo $DEVEXPRESS_AUTH_KEY
+rider
+m run-api
+dn clean
+dn clean server/src/app/app.csproj 
+g diff
+g diff'
+g diff
+g ad
+g cm "server - reports: change route"
+g ps
+m check-all
+g rebase master
+g co master
+g rebase devexpress_spike
+m check-all
+g ps
+m run-api
+g s
+sudo apt-get update -yq     && apt-get install -yq     libgdiplus     libicu-dev     libharfbuzz0b     libfontconfig1     libfreetype6     libpango-1.0-0     libpangocairo-1.0 
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get update -yq     && apt-get upgrade -yq     && apt-get install -yq     libgdiplus     libicu-dev     libharfbuzz0b     libfontconfig1     libfreetype6     libpango-1.0-0     libpangocairo-1.0 
+vim /etc/apt/sources.list
+ll /etc/apt/sources.list.d/
+rm yarn.*
+rm -r yarn.*
+sudo rm yarn.list yarn.list.distUpgrade yarn.list.save
+sudo apt-get remove yarn && sudo apt-get purge yarn
+ll /etc/apt/sources.list.d/
+vim /etc/apt/sources.list
+sudo apt-key list
+sudo apt-key list 
+sudo apt-key list | yarn
+sudo apt-key list | grep yarn
+sudo apt-key list
+sudo apt-key del "72EC F46A 56B4 AD39 C907  BBB7 1646 B01B 86E5 0310"
+sudo apt-get update
+sudo apt-get
+sudo apt-get purge
+sudo apt-get clean
+sudo apt-get check
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+sudo apt-get update
+apt-key adv --keyserver   keyserver.ubuntu.com --recv-keys 04EE7237B7D453EC
+apt-key adv --keyserver   keyserver.ubuntu.com --recv-keys 648ACFD622F3D138
+sudo apt-get update
+apt-key adv --keyserver hkp://keys.gnupg.net --recv-keys 04EE7237B7D453EC
+sudo apt-get update
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
+sudo apt-get update
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 04EE7237B7D453EC
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 648ACFD622F3D138
+sudo apt-get update
+appstreamcli --version
+sudo appstreamcli refresh --force
+sudo apt-get update -yq     && apt-get upgrade -yq     && apt-get install -yq     libgdiplus     libicu-dev     libharfbuzz0b     libfontconfig1     libfreetype6     libpango-1.0-0     libpangocairo-1.0 
+sudo apt-get upgrade
+villo
+sudo apt-get updagte
+sudo apt-get update
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
+sudo apt-get update
+sudo apt-get upgrade 
+code .
+sudo apt-get install -yq     libgdiplus     libicu-dev     libharfbuzz0b     libfontconfig1     libfreetype6     libpango-1.0-0     libpangocairo-1.0 
+m build-server
+docker run --rm -it -p 8001:80 docker.io/library/villoresi  
+sudo apt update
+sudo apt list --upgradable
+sudo apt upgrade
+sudo reboot

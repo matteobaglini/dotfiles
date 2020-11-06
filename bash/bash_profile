@@ -1,0 +1,50 @@
+export LANG=en_US.UTF-8
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+# Load the shell dotfiles
+for file in ~/.{bash_aliases,bash_exports,bash_options,bash_prompt,bash_functions,bash.local}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
+# Add tab completion for many Bash commands
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    source /etc/bash_completion
+fi
+
+# Source fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Enable docker buildkit
+export DOCKER_BUILDKIT=1
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+# add JAVA_HOME
+asdf_update_java_home() {
+  local current
+  if current=$(asdf current java); then
+    local version=$(echo $current | sed -s 's|\(.*\) \?(.*|\1|g')
+    export JAVA_HOME=$(asdf where java $version)
+  else
+    echo "No java version set. Type `asdf list-all java` for all versions."
+  fi
+}
+asdf_update_java_home
+
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+eval "$(gh completion -s bash)"
+eval "$(starship init bash)"
+
+PATH="$HOME/.dotnet:$PATH"
