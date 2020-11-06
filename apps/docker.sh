@@ -11,3 +11,6 @@ if ! docker-compose --version &>/dev/null; then
     chmod +x /usr/local/bin/docker-compose
 fi
 
+if ! lazydockerj &>/dev/null; then
+    curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+fi
