@@ -7,3 +7,6 @@ sudo snap install vlc
 
 sudo pip3 install thefuck
 npm install -g tldr
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
