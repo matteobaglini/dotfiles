@@ -37,5 +37,6 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 eval "$(starship init bash)"
 eval "$(thefuck --alias)"
+eval `dircolors $HOME/.dir_colors`
 
 PATH="$HOME/.dotnet:$PATH"
