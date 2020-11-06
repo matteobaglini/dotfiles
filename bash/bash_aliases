@@ -1,0 +1,26 @@
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias h="cd ~"
+
+alias lg='lazygit'
+alias ld='lazydocker'
+
+alias g="git"
+alias m="make"
+
+# Docker
+alias dk="docker"
+alias dki="docker images"
+alias dkps="docker ps -a"
+
+# .NET CORE CLI
+alias dn="dotnet"
+
+# Has | https://github.com/kdabir/has
+alias has="curl -sL https://git.io/_has | bash -s"
