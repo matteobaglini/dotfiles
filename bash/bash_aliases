@@ -14,12 +14,13 @@ alias ld='lazydocker'
 alias g="git"
 alias m="make"
 
-# Docker
+alias fd=fdfind
+alias bat=batcat
+
 alias dk="docker"
 alias dki="docker images"
 alias dkps="docker ps -a"
 
-# .NET CORE CLI
 alias dn="dotnet"
 
 # Has | https://github.com/kdabir/has
