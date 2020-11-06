@@ -11,7 +11,7 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # Load the shell dotfiles
-for file in ~/.{bash_aliases,bash_exports,bash_options,bash_prompt,bash_functions,bash.local,bash_private}; do
+for file in ~/.{bash_aliases,bash_exports,bash_options,bash_prompt,bash_functions,bash_private}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
@@ -32,19 +32,10 @@ export DOCKER_BUILDKIT=1
 
 # add JAVA_HOME
 . $HOME/.asdf/plugins/java/set-java-home.bash
-# asdf_update_java_home() {
-#   local current
-#   if current=$(asdf current java); then
-#     local version=$(echo $current | sed -s 's|\(.*\) \?(.*|\1|g')
-#     export JAVA_HOME=$(asdf where java $version)
-#   else
-#     echo "No java version set. Type `asdf list-all java` for all versions."
-#   fi
-# }
-# asdf_update_java_home
 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 eval "$(starship init bash)"
+eval "$(thefuck --alias)"
 
 PATH="$HOME/.dotnet:$PATH"
