@@ -1,6 +1,5 @@
 {
-  "extensions.autoUpdate": true,
-  "editor.fontFamily": "FuraCode Nerd Font",
+"extensions.autoUpdate": true,
   "editor.fontLigatures": true,
   "editor.detectIndentation": false,
   "editor.renderWhitespace": "none",
@@ -11,7 +10,7 @@
   "workbench.colorTheme": "Dracula",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.startupEditor": "none",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 3,
   "window.restoreWindows": "none",
   "window.titleBarStyle": "custom",
   "vsicons.dontShowNewVersionMessage": true,
@@ -34,5 +33,14 @@
   "FSharp.useSdkScripts": true,
   "editor.formatOnSave": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.userWords": ["Bson", "Xunit"]
+"cSpell.userWords": [
+    "Bson",
+    "Xunit"
+],
+"[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
 }
