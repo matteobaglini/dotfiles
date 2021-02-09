@@ -9,8 +9,7 @@
   "editor.tabCompletion": true,
   "workbench.colorTheme": "Dracula",
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.startupEditor": "none",
-  "window.zoomLevel": 3,
+"workbench.startupEditor": "none",
   "window.restoreWindows": "none",
   "window.titleBarStyle": "custom",
   "vsicons.dontShowNewVersionMessage": true,
@@ -42,5 +41,6 @@
 },
 "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-}
+},
+"editor.fontFamily": "'Fira Code'"
 }
