@@ -8,6 +8,8 @@ sudo snap install scrcpy
 
 sudo pip3 install thefuck
 sudo pip3 install envdir
+sudo pip3 install togglCli
+
 npm install -g tldr
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
