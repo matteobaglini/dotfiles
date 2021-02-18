@@ -39,4 +39,5 @@ eval "$(starship init bash)"
 eval "$(thefuck --alias)"
 eval `dircolors $HOME/.dir_colors`
 
-PATH="$HOME/.dotnet:$PATH"
+[ -f "$HOME/.local/bin" ] && source "$HOME/.local/bin"
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env"
