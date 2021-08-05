@@ -44,5 +44,28 @@
 	},
 	"[jsonc]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
-	}
+	},
+	"cSpell.language": "en,en-US,it,it-IT",
+	"cSpell.enableFiletypes": [
+		"!git-commit",
+		"!go",
+		"!jade",
+		"!latex",
+		"!less",
+		"!php",
+		"!pug",
+		"!restructuredtext",
+		"!scss",
+		"dockercompose",
+		"dockerfile",
+		"editorconfig",
+		"fsharp",
+		"makefile",
+		"shellscript",
+		"sql",
+		"terraform",
+		"terraform-vars",
+		"vimrc",
+		"xml"
+	]
 }
