@@ -67,5 +67,15 @@
 		"terraform-vars",
 		"vimrc",
 		"xml"
-	]
+	],
+	"cSpell.userWords": [
+		"CQRS",
+		"formist",
+		"reexecute",
+		"scrollable",
+		"testid",
+		"urql",
+		"xstate"
+	],
+	"typescript.updateImportsOnFileMove.enabled": "always"
 }
