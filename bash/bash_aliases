@@ -27,5 +27,8 @@ alias dkps="docker ps -a"
 
 alias dn="dotnet"
 
+alias m="mvn"
+alias mci="mvn clean install"
+
 # Has | https://github.com/kdabir/has
 alias has="curl -sL https://git.io/_has | bash -s"
