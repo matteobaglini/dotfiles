@@ -69,13 +69,21 @@
 		"xml"
 	],
 	"cSpell.userWords": [
+		"Baglini",
 		"CQRS",
 		"formist",
+		"healthcheck",
 		"reexecute",
+		"scalac",
 		"scrollable",
+		"struct",
 		"testid",
+		"unrepresentable",
 		"urql",
 		"xstate"
 	],
-	"typescript.updateImportsOnFileMove.enabled": "always"
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
