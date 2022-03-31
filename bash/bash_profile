@@ -43,7 +43,11 @@ export DOCKER_BUILDKIT=1
 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
-eval "$(starship init bash)"
+if which starship > /dev/null; then
+	eval "$(starship init bash)"
+else
+    source $HOME/.bash_prompt
+fi
 eval `dircolors $HOME/.dir_colors`
 
 [ -f "$HOME/.local/bin" ] && source "$HOME/.local/bin"
