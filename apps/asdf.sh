@@ -8,22 +8,27 @@ if [ ! -d ~/.asdf ]; then
 
     ~/.asdf/bin/asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
     bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
-    ~/.asdf.bin/asdf install nodejs 12.19.0
-    ~/.asdf.bin/asdf global nodejs 12.19.0
+	NODE_VERSION=$(~/.asdf/bin/asdf latest nodejs)
+    ~/.asdf/bin/asdf install nodejs $NODE_VERSION
+    ~/.asdf/bin/asdf global nodejs $NODE_VERSION
 
     ~/.asdf/bin/asdf plugin-add java https://github.com/halcyon/asdf-java.git
-    ~/.asdf/bin/asdf install java adoptopenjdk-15.0.1+9
-    ~/.asdf/bin/asdf global java adoptopenjdk-15.0.1+9
+	JAVA_VERSION=adoptopenjdk-15.0.1+9
+    ~/.asdf/bin/asdf install java $JAVA_VERSION
+    ~/.asdf/bin/asdf global java $JAVA_VERSION
 
     ~/.asdf/bin/asdf plugin-add maven
-    ~/.asdf/bin/asdf install maven 3.6.3
-    ~/.asdf/bin/asdf global maven 3.6.3
+	MVN_VERSION=$(~/.asdf/bin/asdf latest maven)
+    ~/.asdf/bin/asdf install maven $MVN_VERSION
+    ~/.asdf/bin/asdf global maven $MVN_VERSION
 
     ~/.asdf/bin/asdf plugin-add scala
-    ~/.asdf/bin/asdf install scala 2.13.3
-    ~/.asdf/bin/asdf global scala 2.13.3
+	SCALA_VERSION=$(~/.asdf/bin/asdf list all scala | grep ^2.13 | tail -1)
+    ~/.asdf/bin/asdf install scala $SCALA_VERSION
+    ~/.asdf/bin/asdf global scala $SCALA_VERSION
 
     ~/.asdf/bin/asdf plugin-add sbt
-    ~/.asdf/bin/asdf install sbt 1.4.2
-    ~/.asdf/bin/asdf global sbt 1.4.2
+	SBT_VERSION=$(~/.asdf/bin/asdf latest sbt)
+    ~/.asdf/bin/asdf install sbt $SBT_VERSION
+    ~/.asdf/bin/asdf global sbt $SBT_VERSION
 fi
