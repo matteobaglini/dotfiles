@@ -7,6 +7,11 @@
     default = tracking
 [core]
     editor = vim
+    pager = delta
+[delta]
+	syntax-theme = gruvbox-dark
+[interactive]
+	diffFilter = delta --color-only
 [color]
     diff = auto
     status = auto

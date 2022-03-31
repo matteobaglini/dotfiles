@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source apps/basic.sh
+source apps/git.sh
 source apps/python.sh
 source apps/dotnet.sh
 source apps/asdf.sh
