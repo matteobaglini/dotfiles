@@ -9,3 +9,6 @@ sudo -iu matteo <<HEREDOC
         sudo apt-get install -q -y google-chrome-stable
     fi
 HEREDOC
+
+echo ">>>> Install FireFox"
+sudo apt install -q -y firefox
