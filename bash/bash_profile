@@ -16,6 +16,14 @@ for file in ~/.{bash_aliases,bash_exports,bash_options,bash_prompt,bash_function
 done;
 unset file;
 
+# Enable some Bash features when possible:
+# * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
+# * Recursive globbing, e.g. `echo **/*.txt`
+# * `cdspell` autocorrect typos, e.g. `cd mi` into `cd my`
+for option in autocd globstar cdspell; do
+	shopt -s "$option" 2> /dev/null;
+done;
+
 # Add tab completion for many Bash commands
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     source /etc/bash_completion

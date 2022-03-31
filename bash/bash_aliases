@@ -1,34 +1,38 @@
 
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+# List all files colorized in long format, excluding . and ..
+alias ll='ls -lAF --color'
+# List all files colorized in short format, excluding . and ..
+alias la='ls -A --color'
+# List folder colorized in short format
+alias l='ls -CF --color'
 
+# Shortcuts
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias .....="cd ../../../.."
 alias h="cd ~"
-alias dev="cd ~/dev"
+alias dw="cd ~/Downloads"
 alias dot="cd ~/dev/dotfiles"
 alias dl="cd ~/dev/dl"
+alias my="cd ~/dev/my"
 alias spikes="cd ~/dev/spikes"
 
+# Commands
 alias lg='lazygit'
 alias ld='lazydocker'
 
 alias g="git"
 alias m="make"
+alias dk="docker"
+alias dn="dotnet"
 
 alias fd=fdfind
 alias bat=batcat
 
-alias dk="docker"
-alias dki="docker images"
-alias dkps="docker ps -a"
+alias mv="mvn"
+alias mvci="mvn clean install"
+alias mvcc="mvn clean compile"
 
-alias dn="dotnet"
-
-alias m="mvn"
-alias mci="mvn clean install"
-
-# Has | https://github.com/kdabir/has
-alias has="curl -sL https://git.io/_has | bash -s"
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
