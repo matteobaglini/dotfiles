@@ -19,7 +19,7 @@ alias my="cd ~/dev/my"
 alias spikes="cd ~/dev/spikes"
 
 # Commands
-alias ld='lazydocker'
+alias lzd='lazydocker'
 
 alias g="git"
 alias m="make"
