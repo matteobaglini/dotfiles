@@ -1,90 +1,88 @@
 {
-	"extensions.autoUpdate": true,
-	"editor.fontLigatures": true,
-	"editor.detectIndentation": false,
-	"editor.renderWhitespace": "none",
-	"editor.cursorBlinking": "solid",
-	"editor.minimap.enabled": false,
-	"editor.autoIndent": "none",
-	"editor.tabCompletion": "on",
-	"editor.fontSize": 16,
-	"editor.largeFileOptimizations": false,
-	"editor.formatOnSave": true,
-	"editor.fontFamily": "'Fira Code'",
-	"editor.tabSize": 4,
-	"editor.cursorStyle": "line",
-	"editor.insertSpaces": false,
-	"editor.lineNumbers": "on",
-	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-	"editor.wordWrap": "off",
-	"workbench.editor.enablePreviewFromQuickOpen": false,
-	"workbench.iconTheme": "vscode-icons",
-	"workbench.startupEditor": "none",
-	"workbench.colorTheme": "Dracula Soft",
-	"window.restoreWindows": "none",
-	"window.titleBarStyle": "custom",
-	"vsicons.dontShowNewVersionMessage": true,
-	"explorer.confirmDelete": false,
-	"explorer.confirmDragAndDrop": false,
-	"files.autoSave": "off",
-	"git.ignoreMissingGitWarning": true,
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"updateImportsOnFileMove.enabled": "always"
-	},
-	"[html]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"updateImportsOnFileMove.enabled": "always"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"cSpell.language": "en,en-US,it,it-IT",
-	"cSpell.enableFiletypes": [
-		"!git-commit",
-		"!go",
-		"!jade",
-		"!latex",
-		"!less",
-		"!php",
-		"!pug",
-		"!restructuredtext",
-		"!scss",
-		"dockercompose",
-		"dockerfile",
-		"editorconfig",
-		"fsharp",
-		"makefile",
-		"shellscript",
-		"sql",
-		"terraform",
-		"terraform-vars",
-		"vimrc",
-		"xml"
-	],
-	"cSpell.userWords": [
-		"Baglini",
-		"CQRS",
-		"formist",
-		"ghcup",
-		"healthcheck",
-		"reexecute",
-		"scalac",
-		"scrollable",
-		"struct",
-		"testid",
-		"unrepresentable",
-		"urql",
-		"xstate"
-	],
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+  "extensions.autoUpdate": true,
+  "editor.fontLigatures": true,
+  "editor.renderWhitespace": "none",
+  "editor.cursorBlinking": "solid",
+  "editor.minimap.enabled": false,
+  "editor.autoIndent": "none",
+  "editor.tabCompletion": "on",
+  "editor.fontSize": 16,
+  "editor.largeFileOptimizations": false,
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "'Fira Code'",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.cursorStyle": "line",
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Dracula Soft",
+  "window.restoreWindows": "none",
+  "window.titleBarStyle": "custom",
+  "vsicons.dontShowNewVersionMessage": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "off",
+  "git.ignoreMissingGitWarning": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "updateImportsOnFileMove.enabled": "always"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "updateImportsOnFileMove.enabled": "always"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "cSpell.language": "en,en-US,it,it-IT",
+  "cSpell.enableFiletypes": [
+    "!git-commit",
+    "!go",
+    "!jade",
+    "!latex",
+    "!less",
+    "!php",
+    "!pug",
+    "!restructuredtext",
+    "!scss",
+    "dockercompose",
+    "dockerfile",
+    "editorconfig",
+    "fsharp",
+    "makefile",
+    "shellscript",
+    "sql",
+    "terraform",
+    "terraform-vars",
+    "vimrc",
+    "xml"
+  ],
+  "cSpell.userWords": [],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "haskell.formattingProvider": "stylish-haskell",
+  "haskell.manageHLS": "GHCup",
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true,
+    "**/.stack-work": true,
+    "**/dist-newstyle": true,
+    "**/.node_modules": true
+  },
+  "window.zoomLevel": 1,
+  "redhat.telemetry.enabled": false
 }

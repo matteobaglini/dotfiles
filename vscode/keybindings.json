@@ -1,64 +1,79 @@
 [
-  {
-    "key": "alt+t",
-    "command": "workbench.action.tasks.test",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+r",
-    "command": "redo",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+y",
-    "command": "-redo",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+s",
-    "command": "-workbench.action.files.saveAs"
-  },
-  {
-    "key": "ctrl+shift+s",
-    "command": "-workbench.action.files.saveLocalFile",
-    "when": "remoteFileDialogVisible"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "-extension.vim_ctrl+w",
-    "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+c",
-    "command": "-extension.vim_ctrl+c",
-    "when": "editorTextFocus && vim.active && vim.overrideCtrlC && vim.use<C-c> && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+v",
-    "command": "-extension.vim_ctrl+v",
-    "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+a",
-    "command": "-extension.vim_ctrl+a",
-    "when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+s",
-    "command": "-workbench.action.files.save"
-  },
-  {
-    "key": "ctrl+s",
-    "command": "workbench.action.files.saveAll"
-  },
-  {
-    "key": "ctrl+b",
-    "command": "-extension.vim_ctrl+b",
-    "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
-  },
-  {
-    "key": "ctrl+x",
-    "command": "-extension.vim_ctrl+x",
-    "when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
-  }
+	{
+		"key": "alt+t",
+		"command": "workbench.action.tasks.test",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+r",
+		"command": "redo",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+y",
+		"command": "-redo",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+s",
+		"command": "-workbench.action.files.saveAs"
+	},
+	{
+		"key": "ctrl+shift+s",
+		"command": "-workbench.action.files.saveLocalFile",
+		"when": "remoteFileDialogVisible"
+	},
+	{
+		"key": "ctrl+w",
+		"command": "-extension.vim_ctrl+w",
+		"when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+c",
+		"command": "-extension.vim_ctrl+c",
+		"when": "editorTextFocus && vim.active && vim.overrideCtrlC && vim.use<C-c> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+v",
+		"command": "-extension.vim_ctrl+v",
+		"when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+a",
+		"command": "-extension.vim_ctrl+a",
+		"when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+s",
+		"command": "-workbench.action.files.save"
+	},
+	{
+		"key": "ctrl+s",
+		"command": "workbench.action.files.saveAll"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "-extension.vim_ctrl+b",
+		"when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+	},
+	{
+		"key": "ctrl+x",
+		"command": "-extension.vim_ctrl+x",
+		"when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "-extension.vim_ctrl+h",
+		"when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+f",
+		"command": "-extension.vim_ctrl+f",
+		"when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+	},
+	{
+		"key": "ctrl+g",
+		"command": "-extension.vim_ctrl+g",
+		"when": "editorTextFocus && vim.active && vim.use<C-g> && !inDebugRepl"
+	}
 ]
