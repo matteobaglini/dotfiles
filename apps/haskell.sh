@@ -19,6 +19,13 @@ ghcup install hls --set
 ghcup install stack --set
 
 cabal update
+cabal install \
+  hoogle \
+  hlint \
+  fsnotify \
+  stylish-haskell
 
 stack config set install-ghc false --global
 stack config set system-ghc  true  --global
+
+hoogle generate && stack hoogle
