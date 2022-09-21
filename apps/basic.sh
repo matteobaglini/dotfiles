@@ -10,7 +10,7 @@ sudo apt -q -y install \
     build-essential autoconf linux-kernel-headers \
     curl wget tree whois unzip gpg htop \
     jq httpie bat fd-find gnome-tweaks dconf-cli \
-    fonts-firacode
+    fonts-firacode apt-utils ca-certificates
 
 
 echo ">>>> Install basic packeges"
