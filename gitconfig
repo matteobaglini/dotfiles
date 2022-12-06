@@ -32,7 +32,7 @@
     fl = log -u
     sc = diff --name-only --diff-filter=U
     s = status -s
-    tags = tag -l
+    ts = tag -l
     bs = branch -a
     bt = branch -vv
     rs = remote -v
