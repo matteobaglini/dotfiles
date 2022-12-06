@@ -10,7 +10,8 @@ sudo apt -q -y install \
     build-essential autoconf linux-kernel-headers \
     curl wget tree whois unzip gpg htop \
     jq httpie bat fd-find gnome-tweaks dconf-cli \
-    fonts-firacode apt-utils ca-certificates gnupg
+    fonts-firacode apt-utils ca-certificates gnupg \
+    neofetch
 
 
 echo ">>>> Install basic packeges"
