@@ -24,6 +24,9 @@ rm -f ~/.config/Code/User/locale.json && ln -sf "$DOT_FILES_DIR/vscode/locale.js
 rm -f ~/.config/Code/User/vsicons.settings.json && ln -sf "$DOT_FILES_DIR/vscode/vsicons.settings.json" ~/.config/Code/User/vsicons.settings.json
 rm -f ~/.config/Code/User/keybindings.json && ln -sf "$DOT_FILES_DIR/vscode/keybindings.json" ~/.config/Code/User/keybindings.json
 
+mkdir -p ~/.config/neofetch
+rm -f ~/.config/neofetch/config.conf && ln -sf "$DOT_FILES_DIR/neofetch/config.conf" ~/.config/neofetch/config.conf
+
 echo ">> Install/Upgrade vim-plug"
 if [ ! -f $DOT_FILES_DIR/vim/autoload/plug.vim ]; then
     curl -fLo $DOT_FILES_DIR/vim/autoload/plug.vim --create-dirs \
