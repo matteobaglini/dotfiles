@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install -q -y shellcheck
+sudo apt install -q -y shellcheck neofetch
 
 sudo snap install slack --classic
 sudo snap install postman
