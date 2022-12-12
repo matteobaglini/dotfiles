@@ -16,6 +16,3 @@ echo \
 
 sudo apt update && sudo apt-get install -y -q docker-ce docker-ce-cli containerd.io docker-compose-plugin
 sudo usermod -aG docker ${USER}
-docker --version
-docker compose --version
-
