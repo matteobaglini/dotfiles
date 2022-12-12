@@ -19,10 +19,10 @@ rm -f ~/.bash_prompt && ln -sf "$DOT_FILES_DIR/bash/bash_prompt" ~/.bash_prompt
 rm -f ~/.bash_functions && ln -sf "$DOT_FILES_DIR/bash/bash_functions" ~/.bash_functions
 
 mkdir -p ~/.config/Code/User
-rm -f ~/.config/Code/User/settings.json && ln -sf "$DOT_FILES_DIR/vscode/settings.json" ~/.config/Code/User/settings.json
-rm -f ~/.config/Code/User/locale.json && ln -sf "$DOT_FILES_DIR/vscode/locale.json" ~/.config/Code/User/locale.json
-rm -f ~/.config/Code/User/vsicons.settings.json && ln -sf "$DOT_FILES_DIR/vscode/vsicons.settings.json" ~/.config/Code/User/vsicons.settings.json
-rm -f ~/.config/Code/User/keybindings.json && ln -sf "$DOT_FILES_DIR/vscode/keybindings.json" ~/.config/Code/User/keybindings.json
+rm -f ~/.config/Code/User/settings.json && ln -sf "$DOT_FILES_DIR/config/vscode/settings.json" ~/.config/Code/User/settings.json
+rm -f ~/.config/Code/User/locale.json && ln -sf "$DOT_FILES_DIR/config/vscode/locale.json" ~/.config/Code/User/locale.json
+rm -f ~/.config/Code/User/vsicons.settings.json && ln -sf "$DOT_FILES_DIR/config/vscode/vsicons.settings.json" ~/.config/Code/User/vsicons.settings.json
+rm -f ~/.config/Code/User/keybindings.json && ln -sf "$DOT_FILES_DIR/config/vscode/keybindings.json" ~/.config/Code/User/keybindings.json
 
 mkdir -p ~/.config
 rm -f ~/.config/starship.toml && ln -sf "$DOT_FILES_DIR/config/starship.toml" ~/.config/starship.toml
