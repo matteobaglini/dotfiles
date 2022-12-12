@@ -24,6 +24,9 @@ rm -f ~/.config/Code/User/locale.json && ln -sf "$DOT_FILES_DIR/vscode/locale.js
 rm -f ~/.config/Code/User/vsicons.settings.json && ln -sf "$DOT_FILES_DIR/vscode/vsicons.settings.json" ~/.config/Code/User/vsicons.settings.json
 rm -f ~/.config/Code/User/keybindings.json && ln -sf "$DOT_FILES_DIR/vscode/keybindings.json" ~/.config/Code/User/keybindings.json
 
+mkdir -p ~/.config
+rm -f ~/.config/starship.toml && ln -sf "$DOT_FILES_DIR/config/starship.toml" ~/.config/starship.toml
+
 mkdir -p ~/.config/neofetch
 rm -f ~/.config/neofetch/config.conf && ln -sf "$DOT_FILES_DIR/config/neofetch/config.conf" ~/.config/neofetch/config.conf
 
