@@ -1,9 +1,0 @@
-{
-	"image": "doubleloopio/scheme-ubuntu20:1.0.0",
-	"extensions": [
-		"sjhuangx.vscode-scheme",
-		"formulahendry.code-runner",
-		"2gua.rainbow-brackets",
-		"k--kato.intellij-idea-keybindings"
-	]
-}
