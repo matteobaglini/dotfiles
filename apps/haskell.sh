@@ -6,7 +6,7 @@ sudo apt -q -y update
 sudo apt -q -y install \
 	libffi-dev libffi7 libgmp-dev \
 	libgmp10 libncurses-dev libncurses5 libtinfo5 \
-  libicu-dev libnuma1 libnuma-dev libtinfo5 lsb-release
+  libicu-dev libnuma1 libnuma-dev libtinfo5
 
 # Any nonzero value for noninteractive installation
 export BOOTSTRAP_HASKELL_NONINTERACTIVE=1
