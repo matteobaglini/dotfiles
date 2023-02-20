@@ -8,7 +8,8 @@ sudo apt -q -y install \
     build-essential autoconf linux-kernel-headers \
     curl wget tree whois unzip gpg htop \
     jq httpie bat fd-find gnome-tweaks dconf-cli \
-    fonts-firacode apt-utils ca-certificates gnupg lsb-release
+    fonts-firacode apt-utils ca-certificates gnupg \
+    lsb-release graphviz
 
 if ! dra --version &>/dev/null; then
   DRA_VERSION=0.4.2
