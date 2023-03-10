@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 echo ">>>> Basic packeges"
 sudo apt -q -y update

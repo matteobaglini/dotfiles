@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 echo ">>>> Install asdf & plugins"
 if [ ! -d ~/.asdf ]; then
