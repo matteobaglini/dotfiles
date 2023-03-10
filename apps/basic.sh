@@ -1,10 +1,12 @@
 #!/bin/bash
 
 echo ">>>> Basic packeges"
-sudo apt -q -y update
+
+sudo apt-get update
 sudo add-apt-repository universe
-sudo apt -q -y update
-sudo apt -q -y install \
+
+sudo apt-get update
+sudo apt-get -q -y install \
     build-essential autoconf linux-kernel-headers \
     curl wget tree whois unzip gpg htop \
     jq httpie bat fd-find gnome-tweaks dconf-cli \

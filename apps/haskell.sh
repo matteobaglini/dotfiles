@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo ">>>> Install Haskell packeges"
-sudo apt -q -y update
+sudo apt-get update
 
-sudo apt -q -y install \
+sudo apt-get -q -y install \
 	libffi-dev libffi7 libgmp-dev \
 	libgmp10 libncurses-dev libncurses5 libtinfo5 \
   libicu-dev libnuma1 libnuma-dev libtinfo5
@@ -23,7 +23,9 @@ cabal install \
   hoogle \
   hlint \
   fsnotify \
-  stylish-haskell
+  stylish-haskell \
+  fourmolu \
+  cabal-fmt
 
 stack config set install-ghc false --global
 stack config set system-ghc  true  --global

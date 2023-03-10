@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo ">>>> Cleanup"
-sudo apt -q -y autoremove --purge
+sudo apt-get -q -y autoremove --purge
