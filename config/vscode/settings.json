@@ -73,8 +73,9 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "haskell.formattingProvider": "stylish-haskell",
+  "haskell.formattingProvider": "fourmolu",
   "haskell.manageHLS": "GHCup",
+  "hoogle-vscode.maxResults": 15,
   "files.watcherExclude": {
     "**/.bloop": true,
     "**/.metals": true,
@@ -84,5 +85,7 @@
     "**/.node_modules": true
   },
   "window.zoomLevel": 1,
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.openRepositoryInParentFolders": "never"
 }

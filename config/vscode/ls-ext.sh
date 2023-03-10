@@ -1,1 +1,3 @@
-code --list-extensions > extensions.txt
+#!/bin/bash
+
+code --list-extensions > vsc-extensions.txt
