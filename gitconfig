@@ -6,12 +6,12 @@
 [push]
     default = tracking
 [core]
-    editor = vim
+    editor = code --wait
     pager = delta
 [delta]
-	syntax-theme = gruvbox-dark
+	  syntax-theme = gruvbox-dark
 [interactive]
-	diffFilter = delta --color-only
+	  diffFilter = delta --color-only
 [color]
     diff = auto
     status = auto
@@ -19,9 +19,13 @@
     ui = auto
 [merge]
     log = true
-    tool = vimdiff
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
 [diff]
-    tool = vimdiff
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [rerere]
     enabled = true
 [alias]
@@ -48,6 +52,7 @@
     pl = pull --prune
     pr = pull --rebase --prune
     ps = push
+    psf = push --force-with-lease
     df = diff
     undo = reset HEAD~1 --mixed
     throw = reset HEAD~1 --hard
