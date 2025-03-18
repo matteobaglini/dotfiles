@@ -14,7 +14,7 @@ sudo apt-get -q -y install \
     lsb-release graphviz
 
 if ! dra --version &>/dev/null; then
-  DRA_VERSION=0.4.2
+  DRA_VERSION=0.8.0
   curl -fsSL -o dra.deb "https://github.com/devmatteini/dra/releases/download/$DRA_VERSION/dra_${DRA_VERSION}_amd64.deb"
   sudo dpkg -i ./dra.deb
   rm ./dra.deb
